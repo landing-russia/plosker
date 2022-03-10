@@ -4,12 +4,12 @@
 
   let scrollNow = 0;
   let isOpen = false;
-  let isNav = true;
+  let isNav = false;
   let isDark = "";
 
   onMount(() => {
     window.onscroll = () => {
-      if (window.scrollY > scrollNow) {
+      if (window.scrollY > scrollNow || window.scrollY < 150) {
         isNav = false;
       } else {
         isNav = true;
