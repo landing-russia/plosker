@@ -15,7 +15,7 @@
 </script>
 
 <div
-  class="bg-gray-900 flex flex-col min-h-screen selection:bg-gray-500"
+  class="bg-slate-900 flex flex-col min-h-screen selection:bg-slate-600"
 >
   <!-- <Nav /> -->
   <main class="flex-grow w-full">
