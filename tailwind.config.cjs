@@ -8,7 +8,7 @@ const config = {
 
   theme: {
     screens: {
-      xs: "540px",
+      xs: "340px",
       ...defaultTheme.screens,
     },
     extend: {
