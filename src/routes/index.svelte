@@ -1,9 +1,26 @@
 <script>
   // import gsap from "gsap";
-  import { onMount } from "svelte";
+  import { onDestroy } from "svelte";
+  import { createEventDispatcher } from "svelte";
   import Pattern from "$lib/Pattern.svelte";
   import Pattern2 from "$lib/Pattern-2.svelte";
   import Logo from "$lib/Logo.svelte";
+  import { isOpenStore } from "../store/store";
+
+  export let isOpen;
+
+  const unsubscribe = isOpenStore.subscribe((value) => {
+    isOpen = value;
+  });
+  onDestroy(unsubscribe);
+
+  const dispatch = createEventDispatcher();
+
+  function changeStore() {
+    isOpenStore.update(() => (isOpen = !isOpen));
+  }
+
+  // $: {console.log(isOpenStore)}
 
   // onMount(() => {
   //   const tl = gsap.timeline();
@@ -27,28 +44,29 @@
           <div class="text-base 2xl:text-lg font-bold text-slate-300">
             +7&nbsp;978&nbsp;138-11-59
           </div>
-          <div class="text-sm 2xl:text-base leading-5 text-slate-400">
+          <div class="text-sm 2xl:text-base leading-4 text-slate-400">
             г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
           </div>
         </div>
         <button
-        type="button"
-        class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 mr-4 p-1 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 z-10"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+          type="button"
+          class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 mr-4 p-1 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 z-10"
+          on:click={changeStore}
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg></button
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg></button
-      >
       </div>
       <div class="relative pt-32 pb-16">
         <Pattern />
@@ -76,12 +94,13 @@
       alt="women"
     />
     <div class="absolute inset-0 bg-slate-900/90 mix-blend-color" />
-    <div
-      class="absolute inset-x-0 bottom-5 backdrop-blur-md bg-slate-900/50 text-center font-bitter italic mx-10 sm:mx-20 md:mx-32 lg:mx-28 xl:mx-32 2xl:mx-48 p-4 border border-slate-500 rounded-lg shadow-lg"
+    <button
+      type="button"
+      class="absolute inset-x-0 bottom-5 backdrop-blur-md bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic mx-10 sm:mx-20 md:mx-32 lg:mx-28 xl:mx-32 2xl:mx-48 p-4 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
     >
       <p class="text-slate-50 text-2xl font-bold">Татьяна Жидкова</p>
       <p class="text-slate-50">руководитель налоговой практики</p>
-    </div>
+    </button>
   </div>
 </div>
 

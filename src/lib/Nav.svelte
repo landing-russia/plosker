@@ -1,15 +1,24 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import { fade } from "svelte/transition";
+  import { isOpenStore } from "../store/store"
+  import Logo2 from "$lib/Logo2.svelte";
+
+  export let isOpen;
+
+  const unsubscribe = isOpenStore.subscribe(value => {
+		isOpen = value;
+	});
+  onDestroy(unsubscribe);
 
   let scrollNow = 0;
-  let isOpen = false;
+  // export let isOpen = isOpenStore;
   let isNav = false;
   let isDark = "";
 
   onMount(() => {
     window.onscroll = () => {
-      if (window.scrollY > scrollNow || window.scrollY < 150) {
+      if (window.scrollY > scrollNow || window.scrollY < 350) {
         isNav = false;
       } else {
         isNav = true;
@@ -36,6 +45,7 @@
   function isNavEsc(e) {
     if (e.code === "Escape") {
       isOpen = false;
+      isOpenStore.update(() => isOpen = false )
     }
   }
 
@@ -55,104 +65,64 @@
 <svelte:window on:keydown={isNavEsc} />
 
 <div
-  class="fixed w-full bg-white shadow transform ease-in-out transition-all duration-200 {isNav
+  class="fixed w-full bg-slate-900 shadow transform ease-in-out transition-all duration-200 {isNav
     ? 'translate-y-0'
     : '-translate-y-full'} z-40"
 >
-  <nav class="container-fluid flex justify-between items-center h-16">
-    <div class="flex items-center">
-      <a href="/" class="py-4 text-xl font-extrabold text-amber-500"
-        ><span class="text-gray-800">B</span>RAND</a
-      >
+  <nav class="relative container-fluid flex justify-between items-center h-16 z-10">
+      <Logo2 />
+      <div class="hidden sm:block text-right">
+        <div class="text-base 2xl:text-lg font-bold text-slate-300">
+          +7&nbsp;978&nbsp;138-11-59
+        </div>
+        <div class="text-sm 2xl:text-base leading-4 text-slate-400">
+          г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
+        </div>
+      </div>
       <button
         type="button"
-        class="ml-4 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300"
-        on:click={() => (isOpen = !isOpen)}
+        class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 p-1 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
+        on:click={isOpenStore.update(() => isOpen = !isOpen )}
         ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-amber-500 hover:text-amber-700"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg></button
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
-    </div>
-    <div class="flex items-center space-x-3">
-      <a
-        href="/"
-        class="py-4 px-2 text-lg font-medium text-gray-500 hover:text-gray-800 transition duration-200"
-        >Home</a
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg></button
       >
-      <a
-        href="/about"
-        class="py-4 px-2 text-lg font-medium text-gray-500 hover:text-gray-800 transition duration-200"
-        >About</a
-      >
-      {#if isDark === "dark"}
-        <button
-          type="button"
-          class="ml-4 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300"
-          on:click={toggleDarkMode}
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-amber-500 hover:text-amber-700"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            />
-          </svg></button
-        >
-      {:else if isDark === "light"}
-        <button
-          type="button"
-          class="ml-4 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300"
-          on:click={toggleDarkMode}
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-amber-500 hover:text-amber-700"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-            />
-          </svg></button
-        >
-      {/if}
-    </div>
+    
   </nav>
 </div>
 
 {#if isOpen}
   <div
     transition:fade={{ duration: 200 }}
-    class="fixed inset-0 bg-white/75 dark:bg-gray-700/75 z-30"
+    class="fixed inset-0 bg-slate-700/75 z-30"
     aria-hidden="true"
-    on:click={() => (isOpen = false)}
+    on:click={isOpenStore.update(() => isOpen = !isOpen )}
   />
 {/if}
 
 <aside
-  class="transform top-0 left-0 w-64 bg-white dark:bg-gray-900 fixed h-full p-6 shadow-lg overflow-auto ease-in-out transition-all duration-200 z-50 {isOpen
+  class="transform top-0 left-0 w-64 bg-slate-900 fixed h-full p-3 shadow-lg overflow-auto ease-in-out transition-all duration-200 z-50 {isOpen
     ? 'translate-x-0'
     : '-translate-x-full'}"
->
-  <div class="text-gray-700 dark:text-gray-200">Menu</div>
+><div class="h-2" />
+  <Logo2 />
+  <div class="flex items-center mt-8 text-xl font-bold text-slate-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+    </svg><span>+7&nbsp;978&nbsp;138-11-59</span>
+  </div>
+  <div class="mt-2 text-sm 2xl:text-base leading-4 text-slate-400">
+    г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
+  </div>
 </aside>

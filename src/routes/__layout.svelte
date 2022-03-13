@@ -8,16 +8,29 @@
 
 <script>
   import "../app.css";
+  import { onDestroy } from "svelte";
   import Nav from "$lib/Nav.svelte";
   import Footer from "$lib/Footer.svelte";
   import PageTransition from "$lib/PageTransition.svelte";
+  import { isOpenStore } from "../store/store"
   export let key;
+  let isOpen;
+
+  const unsubscribe = isOpenStore.subscribe(value => {
+		isOpen = value;
+	});
+  onDestroy(unsubscribe);
+
+  function handleIsOpen(event){
+    console.log('HI');
+    isOpen = true;
+  }
 </script>
 
 <div
-  class="bg-slate-900 flex flex-col min-h-screen selection:bg-slate-600"
+  class="bg-slate-900 flex flex-col min-h-screen selection:bg-slate-500"
 >
-  <!-- <Nav /> -->
+  <Nav {isOpen} />
   <main class="flex-grow w-full">
     <PageTransition refresh={key}>
       <slot />
