@@ -64,7 +64,7 @@
             </svg>
             <span class="ml-3 text-slate-400">Обработка первичной
               документации<br>
-              <span class="italic">до&nbsp;25&nbsp;операций в&nbsp;месяц</span></span>
+              <span class="italic text-slate-200">до&nbsp;25&nbsp;операций в&nbsp;месяц</span></span>
           </li>
 
           <li class="flex">
@@ -106,46 +106,6 @@
             </svg>
             <span class="ml-3 text-slate-400">Подготовка
               и&nbsp;сдача отчётности</span
-            >
-          </li>
-          <li class="flex">
-            <!-- Heroicon name: outline/check -->
-            <svg
-              class="flex-shrink-0 w-6 h-6 text-slate-400"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span class="ml-3 text-slate-400">Сверка с&nbsp;контрагентами</span
-            >
-          </li>
-          <li class="flex">
-            <!-- Heroicon name: outline/check -->
-            <svg
-              class="flex-shrink-0 w-6 h-6 text-slate-400"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span class="ml-3 text-slate-400">Анализ договоров</span
             >
           </li>
         </ul>
@@ -218,7 +178,7 @@
             </svg>
             <span class="ml-3 text-slate-400">Обработка первичной
               документации<br>
-              <span class="italic">до&nbsp;50&nbsp;операций в&nbsp;месяц</span></span>
+              <span class="italic text-slate-200">до&nbsp;50&nbsp;операций в&nbsp;месяц</span></span>
           </li>
 
           <li class="flex">
@@ -300,6 +260,26 @@
               />
             </svg>
             <span class="ml-3 text-slate-400">Анализ договоров</span
+            >
+          </li>
+          <li class="flex">
+            <!-- Heroicon name: outline/check -->
+            <svg
+              class="flex-shrink-0 w-6 h-6 text-slate-400"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <span class="ml-3 text-slate-400">Кадровый учёт</span
             >
           </li>
         </ul>
@@ -366,7 +346,7 @@
             </svg>
             <span class="ml-3 text-slate-400">Обработка первичной
               документации<br>
-              <span class="italic">до&nbsp;100&nbsp;операций в&nbsp;месяц</span></span>
+              <span class="italic text-slate-200">до&nbsp;100&nbsp;операций в&nbsp;месяц</span></span>
           </li>
 
           <li class="flex">
@@ -448,6 +428,26 @@
               />
             </svg>
             <span class="ml-3 text-slate-400">Анализ договоров</span
+            >
+          </li>
+          <li class="flex">
+            <!-- Heroicon name: outline/check -->
+            <svg
+              class="flex-shrink-0 w-6 h-6 text-slate-400"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <span class="ml-3 text-slate-400">Кадровый учёт</span
             >
           </li>
         </ul>

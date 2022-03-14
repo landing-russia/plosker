@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="lg:flex h-screen">
+<div class="lg:flex lg:h-screen">
   <div class="lg:basis-0 lg:flex-grow lg:flex-shrink overflow-hidden">
     <div class="container-fluid lg:h-screen flex items-center relative">
       <div class="absolute inset-x-0 top-5 flex items-start justify-between">
@@ -94,7 +94,7 @@
       class="{resume
         ? 'h-screen'
         : 'min-h-[85vh]'} w-auto lg:h-screen object-cover"
-      src="women.jpg"
+      src="women-mono.jpg"
       alt="women"
     />
     <div
@@ -115,7 +115,7 @@
         <div class="">
           <img
             class="h-24 w-24 mr-3 inline-block rounded-full"
-            src="women-avatar.jpg"
+            src="women-avatar-mono.jpg"
             alt="women-avatar"
           />
           <span class="font-bitter font-bold text-xl italic">Татьяна Жидкова</span>
