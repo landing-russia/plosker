@@ -4,6 +4,7 @@
   import Pattern from "$lib/Pattern.svelte";
   import Pattern2 from "$lib/Pattern-2.svelte";
   import Logo from "$lib/Logo.svelte";
+  import Price from "$lib/Price.svelte";
   import { isOpenStore } from "../store/store";
 
   export let isOpen;
@@ -154,8 +155,4 @@
   </div>
 </div>
 
-<div class="h-96" />
-<div class="h-96" />
-<div class="h-96" />
-<div class="h-96" />
-<div class="h-96" />
+<Price />
