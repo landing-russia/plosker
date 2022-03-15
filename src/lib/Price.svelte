@@ -1,10 +1,10 @@
-<div class="max-w-7xl mx-auto py-24 pt-80 sm:pt-72 md:pt-96 lg:pt-24 px-4 bg-slate-800 sm:px-6 lg:px-8">
+<div class="container-fluid py-24 pt-80 sm:pt-72 md:pt-96 lg:pt-24 bg-slate-800">
   <h2
-    class="text-3xl font-extrabold text-slate-50 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl"
+    class="text-3xl font-extrabold text-slate-50 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl lg:text-center"
   >
     Тарифы
   </h2>
-  <p class="mt-6 max-w-2xl text-xl text-slate-400">
+  <p class="mt-6 max-w-2xl lg:max-w-full text-xl text-slate-400 lg:text-center">
     Бухгалтерское сопровождение для ООО/ИП
   </p>
 
