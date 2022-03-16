@@ -1,5 +1,5 @@
 <svg
-  class="absolute top-16 lg:-top-10 -right-7 h-48 w-48 lg:h-64 lg:w-64 2xl:h-72 2xl:w-72"
+  class="absolute top-0 lg:top-10 -right-7 h-48 w-48 lg:h-64 lg:w-64 2xl:h-72 2xl:w-72"
   width="412"
   height="340"
   viewBox="0 0 412 340"

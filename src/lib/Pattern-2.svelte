@@ -1,4 +1,4 @@
-<svg class="absolute -bottom-32 -left-7 h-48 w-48 lg:h-64 lg:w-64 lg:-bottom-52 2xl:h-72 2xl:w-72 2xl:-bottom-52" width="412" height="340" viewBox="0 0 412 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="absolute -bottom-32 -left-7 h-48 w-48 lg:h-64 lg:w-64 lg:-bottom-5 2xl:h-72 2xl:w-72 2xl:-bottom-5" width="412" height="340" viewBox="0 0 412 340" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="4" height="4" fill="#334155"/>
   <rect x="24" width="4" height="4" fill="#334155"/>
   <rect x="48" width="4" height="4" fill="#334155"/>

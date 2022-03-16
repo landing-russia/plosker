@@ -1,15 +1,15 @@
-<div class="container-fluid py-24 pt-80 sm:pt-72 md:pt-96 lg:pt-24 bg-slate-800">
+<div class="container-fluid py-12 lg:py-16 bg-slate-800">
   <h2
     class="text-3xl font-extrabold text-slate-50 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl lg:text-center"
   >
     Тарифы
   </h2>
   <p class="mt-6 max-w-2xl lg:max-w-full text-xl text-slate-400 lg:text-center">
-    Бухгалтерское сопровождение для ООО/ИП
+    Бухгалтерское сопровождение для&nbsp;ООО/ИП
   </p>
 
   <!-- Tiers -->
-  <div class="mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+  <div class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
     <div
       class="relative p-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-sm flex flex-col"
     >
