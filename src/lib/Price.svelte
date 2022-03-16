@@ -70,7 +70,7 @@
               </svg>
               <span class="ml-3 text-slate-400"
                 >Обработка первичной документации<br />
-                <span class="italic text-slate-200"
+                <span class="italic text-slate-300"
                   >до&nbsp;25&nbsp;операций в&nbsp;месяц</span
                 ></span
               >
@@ -188,7 +188,7 @@
               </svg>
               <span class="ml-3 text-slate-400"
                 >Обработка первичной документации<br />
-                <span class="italic text-slate-200"
+                <span class="italic text-slate-300"
                   >до&nbsp;50&nbsp;операций в&nbsp;месяц</span
                 ></span
               >
@@ -359,7 +359,7 @@
               </svg>
               <span class="ml-3 text-slate-400"
                 >Обработка первичной документации<br />
-                <span class="italic text-slate-200"
+                <span class="italic text-slate-300"
                   >до&nbsp;100&nbsp;операций в&nbsp;месяц</span
                 ></span
               >
