@@ -14,7 +14,6 @@ const config = {
     extend: {
       // colors,
       fontFamily: {
-        inter: "Inter, sans-serif",
         bitter: "Bitter, serif",
         open: "Open Sans, sans-serif",
       },
