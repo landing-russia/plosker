@@ -13,7 +13,7 @@
 
     <!-- Tiers -->
     <div
-      class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-3 lg:gap-x-8 justify-items-center"
+      class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-3 lg:gap-x-3 xl:gap-x-8 justify-items-center"
     >
       <div
         class="relative lg:w-full p-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-sm flex flex-col"
