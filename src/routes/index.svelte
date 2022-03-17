@@ -100,7 +100,7 @@
     {#if resume}
       <div
         on:click={() => (resume = false)}
-        class="absolute inset-0 bg-slate-900/75 z-10"
+        class="absolute inset-0 backdrop-blur bg-slate-900/75 z-10"
       />
       <button
         class="absolute right-6 top-6 backdrop-blur bg-slate-500/30 hover:bg-slate-600/40 border border-slate-500 px-3 py-1 text-slate-100 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200 z-20"
@@ -145,7 +145,7 @@
         <button
           on:click={() => (resume = !resume)}
           type="button"
-          class="bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-6 py-4 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
+          class="backdrop-blur bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-6 py-4 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
         >
           <p class="text-slate-50 text-2xl font-bold">Татьяна Жидкова</p>
           <p class="text-slate-50">руководитель налоговой практики</p>
