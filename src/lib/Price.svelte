@@ -6,14 +6,14 @@
       Тарифы
     </h2>
     <p
-      class="mt-6 max-w-2xl lg:max-w-full text-xl text-slate-400 text-center"
+      class="mt-6 text-xl text-slate-400 text-center"
     >
       Бухгалтерское сопровождение для&nbsp;ООО/ИП
     </p>
 
     <!-- Tiers -->
     <div
-      class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8"
+      class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-3 lg:gap-x-8 justify-items-center"
     >
       <div
         class="relative p-8 bg-slate-900 border border-slate-700 rounded-2xl shadow-sm flex flex-col"
