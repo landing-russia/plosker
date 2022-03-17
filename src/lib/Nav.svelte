@@ -1,14 +1,14 @@
 <script>
   import { onMount, onDestroy } from "svelte";
   import { fade } from "svelte/transition";
-  import { isOpenStore } from "../store/store"
+  import { isOpenStore } from "../store/store";
   import Logo2 from "$lib/Logo2.svelte";
 
   export let isOpen;
 
-  const unsubscribe = isOpenStore.subscribe(value => {
-		isOpen = value;
-	});
+  const unsubscribe = isOpenStore.subscribe((value) => {
+    isOpen = value;
+  });
   onDestroy(unsubscribe);
 
   let scrollNow = 0;
@@ -29,7 +29,7 @@
 
   if (typeof localStorage !== "undefined") {
     if (
-      localStorage.theme === "dark" 
+      localStorage.theme === "dark"
       // ||
       // (!("theme" in localStorage) &&
       //   window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -45,7 +45,7 @@
   function isNavEsc(e) {
     if (e.code === "Escape") {
       isOpen = false;
-      isOpenStore.update(() => isOpen = false )
+      isOpenStore.update(() => (isOpen = false));
     }
   }
 
@@ -65,27 +65,42 @@
 <svelte:window on:keydown={isNavEsc} />
 
 <div
-  class="fixed w-full bg-slate-900 shadow transform ease-in-out transition-all duration-200 {isNav
+  class="fixed w-full backdrop-blur bg-slate-900/90 border-b border-slate-800 shadow transform ease-in-out transition-all duration-200 {isNav
     ? 'translate-y-0'
     : '-translate-y-full'} z-40"
 >
-  <nav class="relative container-fluid flex justify-between items-center h-16 z-10">
-      <Logo2 />
-      <div class="hidden sm:block text-right">
-        <div class="flex items-center justify-end text-base 2xl:text-lg font-bold text-slate-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg><span>+7&nbsp;978&nbsp;138-11-59</span>
-        </div>
-        <div class="text-sm 2xl:text-base leading-4 text-slate-400">
-          г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
-        </div>
+  <nav
+    class="relative container-fluid flex justify-between items-start py-4 z-10"
+  >
+    <Logo2 />
+    <div class="hidden sm:block text-right">
+      <div
+        class="flex items-center justify-end text-base 2xl:text-lg font-bold text-slate-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
+        </svg><span>+7&nbsp;978&nbsp;138-11-59</span>
       </div>
-      <button
-        type="button"
-        class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 p-1 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
-        on:click={isOpenStore.update(() => isOpen = !isOpen )}
-        ><svg
+      <div class="text-sm 2xl:text-base leading-4 text-slate-400">
+        г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
+      </div>
+    </div>
+    <button
+      type="button"
+      class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
+      on:click={isOpenStore.update(() => (isOpen = !isOpen))}
+      ><svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-8 w-8"
         fill="none"
@@ -99,8 +114,7 @@
           d="M4 6h16M4 12h16M4 18h16"
         />
       </svg></button
-      >
-    
+    >
   </nav>
 </div>
 
@@ -109,19 +123,39 @@
     transition:fade={{ duration: 200 }}
     class="fixed inset-0 bg-slate-700/75 z-30"
     aria-hidden="true"
-    on:click={isOpenStore.update(() => isOpen = !isOpen )}
+    on:click={isOpenStore.update(() => (isOpen = !isOpen))}
   />
 {/if}
 
 <aside
-  class="transform top-0 left-0 w-64 bg-slate-900 fixed h-full p-3 shadow-lg overflow-auto ease-in-out transition-all duration-200 z-50 {isOpen
+  class="transform top-0 left-0 w-67 backdrop-blur bg-slate-900/80 fixed h-full p-3 shadow-lg overflow-auto ease-in-out transition-all duration-200 z-50 {isOpen
     ? 'translate-x-0'
     : '-translate-x-full'}"
-><div class="mt-4" />
-  <Logo2 />
+>
+  <div class="mt-1 flex items-start justify-between">
+    <Logo2 />
+    <button
+    on:click={isOpenStore.update(() => (isOpen = false))}
+    type="button" class="p-0.5 text-slate-400 rounded-full focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
   <div class="flex items-center mt-8 text-xl font-bold text-slate-300">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4 mr-2"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+      />
     </svg><span>+7&nbsp;978&nbsp;138-11-59</span>
   </div>
   <div class="mt-2 text-sm 2xl:text-base leading-4 text-slate-400">

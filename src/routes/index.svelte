@@ -24,7 +24,7 @@
 
 <div class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen">
   <div class="container-fluid overflow-hidden">
-    <div class="h-16 mt-4 lg:mt-6 flex items-center justify-between">
+    <div class="h-16 mt-4 lg:mt-6 flex items-start justify-between">
       <Logo />
       <div class="hidden sm:block text-right">
         <div
@@ -55,7 +55,7 @@
       <button
         on:click={changeStore}
         type="button"
-        class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 p-1 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 z-10"
+        class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 z-10"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-8 w-8"
