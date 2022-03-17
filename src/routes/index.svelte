@@ -73,7 +73,7 @@
       >
     </div>
     <div
-      class="relative lg:min-h-full pt-10 pb-14 lg:pt-16 lg:pb-32 flex items-center"
+      class="relative lg:min-h-full pt-10 pb-14 lg:pt-0 lg:pb-32 flex items-center"
     >
       <Pattern />
       <Pattern2 />
