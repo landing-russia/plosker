@@ -28,7 +28,7 @@
 </script>
 
 <div
-  class="bg-slate-900 flex flex-col min-h-screen selection:bg-slate-500"
+  class="selection:bg-slate-500 bg-slate-900 flex flex-col min-h-screen"
 >
   <Nav {isOpen} />
   <main class="flex-grow w-full">

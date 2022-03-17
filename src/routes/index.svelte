@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen selection:bg-slate-500">
+<div class="selection:bg-slate-500 bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen">
   <div class="container-fluid overflow-hidden">
     <div class="mt-6 flex items-center justify-between">
       <Logo />
