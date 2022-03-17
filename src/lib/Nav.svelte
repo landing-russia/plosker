@@ -117,7 +117,7 @@
   class="transform top-0 left-0 w-64 bg-slate-900 fixed h-full p-3 shadow-lg overflow-auto ease-in-out transition-all duration-200 z-50 {isOpen
     ? 'translate-x-0'
     : '-translate-x-full'}"
-><div class="h-3" />
+><div class="mt-4" />
   <Logo2 />
   <div class="flex items-center mt-8 text-xl font-bold text-slate-300">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

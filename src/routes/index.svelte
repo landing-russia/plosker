@@ -24,11 +24,11 @@
 
 <div class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen">
   <div class="container-fluid overflow-hidden">
-    <div class="mt-6 flex items-center justify-between">
+    <div class="h-16 mt-4 lg:mt-6 flex items-center justify-between">
       <Logo />
       <div class="hidden sm:block text-right">
         <div
-          class="flex items-center justify-end text-base 2xl:text-lg font-bold text-slate-300"
+          class="flex items-center justify-end text-base 2xl:text-xl font-bold text-slate-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@
             >&nbsp;138-11-59</span
           >
         </div>
-        <div class="text-sm 2xl:text-base leading-4 text-slate-400">
+        <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-slate-400">
           г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
         </div>
       </div>
