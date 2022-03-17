@@ -21,10 +21,10 @@
         <div class="flex-1">
           <h3 class="text-xl font-semibold text-slate-100">Старт</h3>
           <p class="mt-4 flex items-baseline text-slate-100">
-            <span class="text-4xl font-extrabold tracking-tight"
+            <span class="text-2xl xs:text-4xl font-extrabold tracking-tight"
               >от&nbsp;2600&nbsp;₽</span
             >
-            <span class="ml-1 text-xl font-semibold">/месяц</span>
+            <span class="ml-1 text-sm xs:text-xl font-semibold">/месяц</span>
           </p>
 
           <!-- Feature list -->
