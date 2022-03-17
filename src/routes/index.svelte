@@ -118,6 +118,7 @@
         <span class="font-bitter font-bold text-xl 2xl:text-3xl italic"
           >Татьяна Жидкова</span
         >
+        <div class="h-2" />
         <p class="text-base 2xl:text-2xl">
           <span class="font-bold">2008</span> <br />
           Российский экономический университет&nbsp;им.&nbsp;Г.В.&nbsp;Плеханова <br /> Специальность:
