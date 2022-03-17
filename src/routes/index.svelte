@@ -24,7 +24,7 @@
 
 <div class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen">
   <div class="container-fluid overflow-hidden">
-    <div class="h-24 flex items-center justify-between">
+    <div class="mt-6 flex items-center justify-between">
       <Logo />
       <div class="hidden sm:block text-right">
         <div
