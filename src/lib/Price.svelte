@@ -122,7 +122,7 @@
 
         <a
           href="#!"
-          class="bg-slate-50 text-slate-700 hover:bg-slate-200 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+          class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
           >Оставить заявку</a
         >
       </div>
@@ -134,7 +134,7 @@
           <h3 class="text-xl font-semibold text-slate-100">Бизнес лайт</h3>
 
           <p
-            class="absolute top-0 py-1.5 px-4 bg-slate-500 rounded-full text-xs font-semibold uppercase tracking-wide text-slate-50 transform -translate-y-1/2"
+            class="absolute top-0 py-1.5 px-4 bg-slate-50 text-slate-700 rounded-full text-xs font-semibold uppercase tracking-wide transform -translate-y-1/2"
           >
             Оптимальный
           </p>
@@ -299,7 +299,7 @@
 
         <a
           href="#!"
-          class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+          class="bg-slate-50 text-slate-700 hover:bg-slate-200 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
           >Оставить заявку</a
         >
       </div>
@@ -470,7 +470,7 @@
 
         <a
           href="#!"
-          class="bg-slate-50 text-slate-700 hover:bg-slate-200 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+          class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
           >Оставить заявку</a
         >
       </div>
