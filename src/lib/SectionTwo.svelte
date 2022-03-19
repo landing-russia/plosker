@@ -5,7 +5,7 @@
     >
       <div class="max-w-lg">
         <h3
-          class="mb-8 text-2xl font-bold text-slate-50 sm:text-3xl sm:leading-none lg:text-4xl text-center"
+          class="mb-6 text-2xl font-bold text-slate-50 sm:text-3xl sm:leading-none lg:text-4xl text-center"
         >
           Бухгалтерские услуги
         </h3>
@@ -16,7 +16,7 @@
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="ml-3 text-slate-300 text-lg"
-              >Ведение бухгалтерского и&nbsp;налогового учета</span
+              >Ведение бухгалтерского и&nbsp;налогового учёта</span
             >
           </li>
           <li class="flex">
@@ -25,7 +25,7 @@
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="ml-3 text-slate-300 text-lg"
-              >Восстановление бухгалтерского, налогового учета</span
+              >Восстановление бухгалтерского, налогового учёта</span
             >
           </li>
           <li class="flex">
@@ -34,7 +34,7 @@
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="ml-3 text-slate-300 text-lg"
-              >Организация бухгалтерского учета с&nbsp;нуля</span
+              >Организация бухгалтерского учёта с&nbsp;нуля</span
             >
           </li>
           <li class="flex">
@@ -43,14 +43,14 @@
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
             </svg>
             <span class="ml-3 text-slate-300 text-lg"
-              >Сдача налоговой и&nbsp;бухгалтерской отчетности для&nbsp;ИП и&nbsp;юридических лиц</span
+              >Сдача налоговой и&nbsp;бухгалтерской отчётности для&nbsp;ИП и&nbsp;юридических лиц</span
             >
           </li>
         </ul>
       </div>
       <div class="max-w-lg">
         <h3
-          class="mb-8 text-2xl font-bold text-slate-50 sm:text-3xl sm:leading-none lg:text-4xl text-center"
+          class="mb-6 text-2xl font-bold text-slate-50 sm:text-3xl sm:leading-none lg:text-4xl text-center"
         >
           Корпоративное право
         </h3>
