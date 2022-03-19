@@ -4,12 +4,13 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const config = {
   // mode: "jit",
   content: ["./src/**/*.{html,js,svelte,ts}"],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
 
   theme: {
     screens: {
       xs: "340px",
       ...defaultTheme.screens,
+      "3xl": "1900px",
     },
     extend: {
       // colors,
@@ -18,7 +19,7 @@ const config = {
         open: "Open Sans, sans-serif",
       },
       fontSize: {
-        '10xl': '10rem'
+        "10xl": "10rem",
       },
       maxWidth: {
         "1/4": "25%",
@@ -27,12 +28,12 @@ const config = {
         90: "90%",
       },
       spacing: {
-        '13': '3.25rem',
-        '15': '3.75rem',
-        '67': '16.75rem',
-        '128': '32rem',
-        '144': '36rem',
-      }
+        13: "3.25rem",
+        15: "3.75rem",
+        67: "16.75rem",
+        128: "32rem",
+        144: "36rem",
+      },
     },
   },
   variants: {

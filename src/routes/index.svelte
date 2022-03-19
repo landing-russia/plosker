@@ -4,6 +4,8 @@
   import Pattern from "$lib/Pattern.svelte";
   import Pattern2 from "$lib/Pattern-2.svelte";
   import Logo from "$lib/Logo.svelte";
+  import SectionOne from "$lib/SectionOne.svelte";
+  import SectionTwo from "$lib/SectionTwo.svelte";
   import Price from "$lib/Price.svelte";
   import { isOpenStore } from "../store/store";
 
@@ -79,7 +81,7 @@
       <Pattern2 />
       <div class="relative z-10">
         <h1
-          class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-slate-50"
+          class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold text-slate-50"
         >
           Специализация&nbsp;— <span class="text-slate-400"
             >налоговое&nbsp;право</span
@@ -154,5 +156,9 @@
     {/if}
   </div>
 </div>
+
+<SectionOne />
+
+<SectionTwo />
 
 <Price />
