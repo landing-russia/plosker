@@ -8,7 +8,7 @@
   <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
     <div class="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-slate-800 lg:pr-16">
       <div class="md:flex-shrink-0">
-        <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg" alt="Tuple">
+        <img class="h-16" src="shikardo.png" alt="Shikardo">
       </div>
       <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
         <div class="relative text-lg font-medium text-white md:flex-grow">
@@ -32,7 +32,7 @@
     </div>
     <div class="py-12 px-4 border-t-2 border-slate-800 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
       <div class="md:flex-shrink-0">
-        <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg" alt="Workcation">
+        <img class="h-12" src="ultramarin.png" alt="Ultramarin">
       </div>
       <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
         <div class="relative text-lg font-medium text-white md:flex-grow">
