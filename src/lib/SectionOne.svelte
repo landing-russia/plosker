@@ -3,7 +3,7 @@
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
     >
-      Юридическим лицам и&nbsp;ИП
+      Налоговая практика
     </h2>
     <div
       class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-3 xl:gap-x-8 justify-items-center"
