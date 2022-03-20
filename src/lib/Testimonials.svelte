@@ -1,5 +1,10 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <section class="bg-slate-900">
+  <h2
+      class="py-16 text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
+    >
+      Отзывы
+    </h2>
   <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
     <div class="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-slate-800 lg:pr-16">
       <div class="md:flex-shrink-0">
