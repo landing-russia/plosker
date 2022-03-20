@@ -1,12 +1,12 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <section class="bg-slate-900">
   <h2
-      class="py-16 text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
+      class="pt-16 text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
     >
       Отзывы
     </h2>
-  <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
-    <div class="pb-12 px-4 sm:px-6 md:flex md:flex-col md:pb-16 md:pl-0 md:pr-10 md:border-r md:border-slate-800 lg:pr-16">
+  <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 py-12 md:px-6 lg:px-8">
+    <div class="px-4 pb-12 md:pb-0 sm:px-6 md:flex md:flex-col md:pl-0 md:pr-10 md:border-r md:border-slate-800">
       <div class="md:flex-shrink-0">
         <img class="h-20" src="shikardo.png" alt="Shikardo">
       </div>
@@ -30,7 +30,7 @@
         </footer>
       </blockquote>
     </div>
-    <div class="pb-12 px-4 border-t-2 border-slate-800 sm:px-6 md:pb-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
+    <div class="px-4 pt-12 md:pt-0 border-t-2 border-slate-800 sm:px-6 md:pr-0 md:border-t-0 md:border-l">
       <div class="md:flex-shrink-0">
         <img class="h-20" src="ultramarin.png" alt="Ultramarin">
       </div>
