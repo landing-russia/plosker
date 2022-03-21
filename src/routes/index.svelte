@@ -7,6 +7,7 @@
   import SectionOne from "$lib/SectionOne.svelte";
   import SectionTwo from "$lib/SectionTwo.svelte";
   import Price from "$lib/Price.svelte";
+  import Contacts from "$lib/Contacts.svelte";
   import Testimonials from "$lib/Testimonials.svelte";
   import { isOpenStore } from "../store/store";
 
@@ -165,3 +166,5 @@
 <Price />
 
 <Testimonials />
+
+<Contacts />

@@ -12,7 +12,6 @@
   onDestroy(unsubscribe);
 
   let scrollNow = 0;
-  // export let isOpen = isOpenStore;
   let isNav = false;
   let isDark = "";
 
