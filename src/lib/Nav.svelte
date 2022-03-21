@@ -78,7 +78,7 @@
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4 mr-2"
+          class="h-4 w-4 mr-2 text-slate-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -89,7 +89,10 @@
             stroke-linejoin="round"
             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
           />
-        </svg><span>+7&nbsp;978&nbsp;138-11-59</span>
+        </svg><span
+          ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+          >&nbsp;946-12-29</span
+        >
       </div>
       <div class="text-sm 2xl:text-base leading-4 text-slate-400">
         г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
@@ -134,30 +137,85 @@
   <div class="mt-1 flex items-start justify-between">
     <Logo2 />
     <button
-    on:click={isOpenStore.update(() => (isOpen = false))}
-    type="button" class="p-0.5 text-slate-400 rounded-full focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+      on:click={isOpenStore.update(() => (isOpen = false))}
+      type="button"
+      class="p-0.5 text-slate-400 rounded-full focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        />
       </svg>
     </button>
   </div>
-  <div class="flex items-center mt-8 text-xl font-bold text-slate-300">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-4 w-4 mr-2"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      stroke-width="2"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-      />
-    </svg><span>+7&nbsp;978&nbsp;138-11-59</span>
+
+  <div class="mt-8 text-xl leading-tigth font-semibold text-slate-400">
+    г.&nbsp;Евпатория,<br />пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
   </div>
-  <div class="mt-2 text-sm 2xl:text-base leading-4 text-slate-400">
-    г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
+  <div class="mt-8 text-2xl font-bold text-slate-300 space-y-5">
+    <div class="flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 mr-2 text-slate-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+        />
+      </svg><span
+        ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+        >&nbsp;946-12-29</span
+      >
+    </div>
+    <div class="flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 mr-2 text-slate-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+        />
+      </svg><span
+        ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+        >&nbsp;946-12-28</span
+      >
+    </div>
+    <div class="flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 mr-2 text-slate-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+        />
+      </svg><span
+        ><span class="font-semibold text-slate-400">+7&nbsp;916</span
+        >&nbsp;210-59-34</span
+      >
+    </div>
   </div>
 </aside>

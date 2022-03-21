@@ -49,7 +49,7 @@
             />
           </svg><span
             ><span class="font-semibold text-slate-400">+7&nbsp;978</span
-            >&nbsp;138-11-59</span
+            >&nbsp;946-12-29</span
           >
         </div>
         <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-slate-400">
