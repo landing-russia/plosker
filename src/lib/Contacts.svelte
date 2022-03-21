@@ -2,7 +2,7 @@
   import Logo from "./Logo.svelte";
 </script>
 
-<div id="contacts" class="py-12 lg:py-16 bg-slate-800">
+<div class="py-12 lg:py-16 bg-slate-800">
   <div class="pb-12 lg:pb-16 container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
@@ -55,7 +55,10 @@
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              <p class="ml-3 text-gray-300">+7&nbsp;978&nbsp;138-11-59</p>
+              <p class="ml-3 text-gray-300"><span
+                ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+                >&nbsp;138-11-59</span
+              ></p>
             </dd>
           </div>
           <div class="mt-3">
@@ -84,6 +87,7 @@
       </div>
     </div>
     <div
+    id="contacts"
       class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 rounded-lg"
     >
       <div class="max-w-lg mx-auto lg:max-w-none">
@@ -119,7 +123,7 @@
               id="phone"
               autocomplete="tel"
               class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-              placeholder="Телефон"
+              placeholder="Телефон (необязательно)"
             />
           </div>
           <div>
