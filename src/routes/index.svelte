@@ -26,7 +26,7 @@
   }
 </script>
 
-<div class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen">
+<div id="home" class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen">
   <div class="container-fluid overflow-hidden">
     <div class="h-16 mt-4 lg:mt-6 flex items-start justify-between">
       <Logo />
