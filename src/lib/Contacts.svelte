@@ -2,7 +2,7 @@
   import Logo from "./Logo.svelte";
 </script>
 
-<div class="py-12 lg:py-16 bg-slate-800">
+<div id="contacts" class="py-12 lg:py-16 bg-slate-800">
   <div class="pb-12 lg:pb-16 container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
@@ -11,7 +11,7 @@
     </h2>
   </div>
   <div class="container-fluid max-w-screen-2xl lg:grid lg:grid-cols-5">
-    <div class="bg-slate-800 pb-16 lg:col-span-2 xl:pr-12">
+    <div class="bg-slate-800 pb-12 lg:py-16 lg:col-span-2 xl:pr-12">
       <div class="max-w-lg mx-auto">
         <Logo />
         <!-- <p class="mt-3 text-lg leading-6 text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p> -->
@@ -87,7 +87,7 @@
       class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 rounded-lg"
     >
       <div class="max-w-lg mx-auto lg:max-w-none">
-        <h4 class="py-12 text-2xl lg:text-3xl text-slate-200 font-bitter font-bold">Оставьте сообщение/заявку</h4>
+        <h4 class="py-16 text-2xl lg:text-3xl text-slate-200 font-bitter font-bold">Оставьте сообщение/заявку</h4>
         <form action="" method="POST" class="grid grid-cols-1 gap-y-6">
           <div>
             <label for="full-name" class="sr-only">Full name</label>

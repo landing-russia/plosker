@@ -121,7 +121,7 @@
         </div>
 
         <a
-          href="#!"
+          href="#contacts"
           class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
           >Оставить заявку</a
         >
@@ -298,7 +298,7 @@
         </div>
 
         <a
-          href="#!"
+          href="#contacts"
           class="bg-slate-50 text-slate-700 hover:bg-slate-200 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
           >Оставить заявку</a
         >
@@ -469,7 +469,7 @@
         </div>
 
         <a
-          href="#!"
+          href="#contacts"
           class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
           >Оставить заявку</a
         >
