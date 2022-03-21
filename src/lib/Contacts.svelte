@@ -84,7 +84,7 @@
       </div>
     </div>
     <div
-      class="pb-12 bg-slate-900 lg:col-span-3 px-12 rounded-lg"
+      class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 rounded-lg"
     >
       <div class="max-w-lg mx-auto lg:max-w-none">
         <h4 class="py-12 text-2xl lg:text-3xl text-slate-200 font-bitter font-bold">Оставьте сообщение/заявку</h4>
