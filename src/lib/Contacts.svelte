@@ -87,7 +87,7 @@
       class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 rounded-lg"
     >
       <div class="max-w-lg mx-auto lg:max-w-none">
-        <h4 class="py-16 text-2xl lg:text-3xl text-slate-200 font-bitter font-bold">Оставьте сообщение/заявку</h4>
+        <h4 class="py-16 text-2xl lg:text-3xl text-slate-200 font-bitter font-bold">Оставьте сообщение или&nbsp;заявку</h4>
         <form action="" method="POST" class="grid grid-cols-1 gap-y-6">
           <div>
             <label for="full-name" class="sr-only">Full name</label>
@@ -96,7 +96,7 @@
               name="full-name"
               id="full-name"
               autocomplete="name"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Имя"
             />
           </div>
@@ -107,8 +107,8 @@
               name="email"
               type="email"
               autocomplete="email"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-              placeholder="Email"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              placeholder="Электронная почта"
             />
           </div>
           <div>
@@ -118,7 +118,7 @@
               name="phone"
               id="phone"
               autocomplete="tel"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Телефон"
             />
           </div>
@@ -128,7 +128,7 @@
               id="message"
               name="message"
               rows="4"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Сообщение"
             />
           </div>
