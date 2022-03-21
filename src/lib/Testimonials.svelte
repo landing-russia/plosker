@@ -5,7 +5,7 @@
     >
       Отзывы
     </h2>
-  <div class="max-w-7xl mx-auto md:grid md:grid-cols-2 py-12 md:px-6 lg:px-8">
+  <div class="container-fluid max-w-screen-2xl mx-auto md:grid md:grid-cols-2 py-12">
     <div class="px-4 pb-12 md:pb-0 sm:px-6 md:flex md:flex-col md:pl-0 md:pr-10 md:border-r md:border-slate-800">
       <div class="md:flex-shrink-0">
         <img class="h-20" src="shikardo.png" alt="Shikardo">
