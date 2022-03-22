@@ -157,7 +157,7 @@
           </div>
         </dl>
         <div class="mt-8">
-          <a href="https://api.whatsapp.com/send?phone=79789461229">
+          <a href="https://api.whatsapp.com/send?phone=+79789461229">
             <svg
               class="h-8 w-8"
               width="600"
