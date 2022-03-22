@@ -156,10 +156,13 @@
             </dd>
           </div>
         </dl>
-        <div class="mt-8">
-          <a href="https://api.whatsapp.com/send?phone=+79789461229">
+        <div class="mt-8 flex">
+          <a
+            class="group flex items-center px-6 py-3 border border-slate-700 bg-slate-900 hover:bg-slate-700 rounded-lg shadow-lg"
+            href="https://api.whatsapp.com/send?phone=+79162105934"
+          >
             <svg
-              class="h-8 w-8"
+              class="h-8 w-8 mr-3"
               width="600"
               height="603"
               viewBox="0 0 600 603"
@@ -202,7 +205,8 @@
                   <rect width="600" height="603" fill="white" />
                 </clipPath>
               </defs>
-            </svg></a
+            </svg><span class="text-slate-400 group-hover:text-slate-50 transition duration-200">Связаться по&nbsp;WhatsApp</span
+            ></a
           >
         </div>
       </div>
