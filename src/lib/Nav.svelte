@@ -72,7 +72,7 @@
     class="relative container-fluid flex justify-between items-start py-4 z-10"
   >
     <Logo2 />
-    <a href="#contacts" class="hidden sm:block text-right">
+    <a href="#contact-info" class="hidden sm:block text-right">
       <div
         class="flex items-center justify-end text-base 2xl:text-lg font-bold text-slate-300"
       >
