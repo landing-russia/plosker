@@ -1,4 +1,4 @@
-<div class="py-12 lg:py-16 bg-slate-800">
+<div id="practice" class="py-12 lg:py-16 bg-slate-800">
   <div class="container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"

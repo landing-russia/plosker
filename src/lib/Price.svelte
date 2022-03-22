@@ -1,4 +1,4 @@
-<div class="py-12 lg:py-16 bg-slate-800">
+<div id="price" class="py-12 lg:py-16 bg-slate-800">
   <div class="container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
@@ -122,7 +122,7 @@
 
         <a
           href="#contacts"
-          class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+          class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium transition duration-200"
           >Оставить заявку</a
         >
       </div>
@@ -299,7 +299,7 @@
 
         <a
           href="#contacts"
-          class="bg-slate-50 text-slate-700 hover:bg-slate-200 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+          class="bg-slate-50 text-slate-700 hover:bg-slate-200 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium transition duration-200"
           >Оставить заявку</a
         >
       </div>
@@ -470,7 +470,7 @@
 
         <a
           href="#contacts"
-          class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+          class="bg-slate-500 text-slate-50 hover:bg-slate-600 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium transition duration-200"
           >Оставить заявку</a
         >
       </div>

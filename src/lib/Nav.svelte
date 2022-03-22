@@ -95,7 +95,7 @@
         >
       </div>
       <div class="text-sm 2xl:text-base leading-4 text-slate-400">
-        г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
+        г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
       </div>
     </a>
     <button
@@ -134,88 +134,86 @@
     ? 'translate-x-0'
     : '-translate-x-full'}"
 >
-  <div class="mt-1 flex items-start justify-between">
-    <Logo2 />
-    <button
-      on:click={isOpenStore.update(() => (isOpen = false))}
-      type="button"
-      class="p-0.5 text-slate-400 rounded-full focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
-        viewBox="0 0 20 20"
-        fill="currentColor"
+  <div class="flex flex-col h-full">
+    <div class="mt-1 flex items-start justify-between">
+      <Logo2 />
+      <button
+        on:click={isOpenStore.update(() => (isOpen = false))}
+        type="button"
+        class="p-0.5 text-slate-400 rounded-full focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
       >
-        <path
-          fill-rule="evenodd"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </button>
-  </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="mt-10 flex-grow text-2xl font-semibold font-bitter text-slate-300 space-y-5">
+      <a
+        href="#practice"
+        on:click={isOpenStore.update(() => (isOpen = false))}
+        class="flex items-center"
+      ><span
+          >Практика</span
+        >
+      </a>
+      <a
+        href="#price"
+        on:click={isOpenStore.update(() => (isOpen = false))}
+        class="flex items-center"
+      ><span
+          >Тарифы</span
+        >
+      </a>
+      <a
+        href="#testimonials"
+        on:click={isOpenStore.update(() => (isOpen = false))}
+        class="flex items-center"
+      ><span
+          >Отзывы</span
+        >
+      </a>
+      <a
+        href="#contact-info"
+        on:click={isOpenStore.update(() => (isOpen = false))}
+        class="flex items-center"
+      ><span
+          >Контакты</span
+        >
+      </a>
+    </div>
 
-  <div class="mt-8 text-xl leading-tigth font-semibold text-slate-400">
-    г.&nbsp;Евпатория,<br />пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
-  </div>
-  <div class="mt-8 text-2xl font-bold text-slate-300 space-y-5">
-    <div class="flex items-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 mr-2 text-slate-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-        />
-      </svg><span
-        ><span class="font-semibold text-slate-400">+7&nbsp;978</span
-        >&nbsp;946-12-29</span
-      >
-    </div>
-    <div class="flex items-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 mr-2 text-slate-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-        />
-      </svg><span
-        ><span class="font-semibold text-slate-400">+7&nbsp;978</span
-        >&nbsp;946-12-28</span
-      >
-    </div>
-    <div class="flex items-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 mr-2 text-slate-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-        />
-      </svg><span
-        ><span class="font-semibold text-slate-400">+7&nbsp;916</span
-        >&nbsp;210-59-34</span
-      >
+    <div
+      class="my-4 flex-shrink-0 text-2xl leading-tigth font-bold text-slate-400"
+    >
+      <div class="flex items-center text-slate-200">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 mr-2 text-slate-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
+        </svg><span
+          ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+          >&nbsp;946-12-29</span
+        >
+      </div>
+      <div class="mt-3 text-sm font-normal">г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2</div>
     </div>
   </div>
 </aside>

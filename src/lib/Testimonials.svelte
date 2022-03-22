@@ -1,5 +1,5 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<section class="bg-slate-900">
+<section id="testimonials" class="bg-slate-900">
   <h2
       class="pt-16 text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
     >

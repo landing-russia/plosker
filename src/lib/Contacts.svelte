@@ -2,7 +2,7 @@
   import Logo3 from "./Logo3.svelte";
 </script>
 
-<div class="py-12 lg:py-16 bg-slate-800">
+<div id="contact-info" class="py-12 lg:py-16 bg-slate-800">
   <div class="pb-12 lg:pb-16 container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
@@ -38,8 +38,8 @@
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              <a href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_36/Z0oYdQNmSkYCQFpvfX5xcn1nYw==/?indoorLevel=1&ll=33.346335%2C45.203148&utm_source=main_stripe_big&z=17.14" class="ml-3 text-lg text-gray-300">
-                г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
+              <a href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_37/Z0oYdQNmSUABQFpvfX14d3hiYQ==/?indoorLevel=1&ll=33.346279%2C45.196289&utm_source=main_stripe_big&z=19.31" class="ml-3 text-lg text-gray-300">
+                г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
               </a>
             </dd>
           </div>
@@ -156,9 +156,9 @@
             </dd>
           </div>
         </dl>
-        <div class="mt-8 flex">
+        <div class="mt-10 flex">
           <a
-            class="group flex items-center px-6 py-3 border border-slate-700 bg-slate-900 hover:bg-slate-700 rounded-lg shadow-lg"
+            class="group w-full sm:w-auto flex items-center justify-center px-7 py-5 border border-slate-700 bg-slate-900 hover:bg-slate-700 rounded-lg shadow-lg transition duration-200"
             href="https://api.whatsapp.com/send?phone=+79162105934"
           >
             <svg
@@ -268,7 +268,7 @@
           <div>
             <button
               type="submit"
-              class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-700 bg-slate-100 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500"
+              class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
               >Отправить</button
             >
           </div>

@@ -53,7 +53,7 @@
           >
         </div>
         <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-slate-400">
-          г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
+          г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
         </div>
       </a>
       <button
@@ -83,7 +83,7 @@
       <Pattern2 />
       <div class="relative z-10">
         <h1
-          class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold text-slate-50"
+          class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-7.5xl font-bold text-slate-50"
         >
           Специализация&nbsp;— <span class="text-slate-400"
             >налоговое&nbsp;право</span

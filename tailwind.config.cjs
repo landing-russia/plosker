@@ -19,6 +19,8 @@ const config = {
         open: "Open Sans, sans-serif",
       },
       fontSize: {
+        "7.5xl": "5.25rem",
+        "9.5xl": "9rem",
         "10xl": "10rem",
       },
       maxWidth: {
