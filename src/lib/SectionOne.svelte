@@ -1,4 +1,4 @@
-<div id="practice" class="py-12 lg:py-16 bg-slate-800">
+<div id="practice" class="py-12 lg:py-20 bg-slate-800">
   <div class="container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
@@ -11,7 +11,7 @@
       <div
         class="w-full h-72 lg:h-full bg-[url('/photo-1.jpg')] bg-cover bg-center overflow-hidden border border-slate-700 rounded-lg shadow-lg"
       />
-      <ul class="pt-0 lg:pt-6 pb-6 space-y-6">
+      <ul class="pt-0 lg:pt-6 pb-6 space-y-6 max-w-lg">
         <li class="flex">
           <!-- Heroicon name: outline/check -->
           <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-slate-300" viewBox="0 0 20 20" fill="currentColor">

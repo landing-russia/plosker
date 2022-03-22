@@ -1,4 +1,4 @@
-<div id="price" class="py-12 lg:py-16 bg-slate-800">
+<div id="price" class="py-12 lg:py-20 bg-slate-800">
   <div class="container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
@@ -6,7 +6,7 @@
       Тарифы
     </h2>
     <p
-      class="mt-6 text-xl text-slate-400 text-center"
+      class="mt-6 text-xl lg:text-2xl text-slate-400 text-center"
     >
       Бухгалтерское сопровождение для&nbsp;ООО/ИП
     </p>

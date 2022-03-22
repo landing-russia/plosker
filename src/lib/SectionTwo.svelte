@@ -1,4 +1,4 @@
-<div class="py-16 bg-slate-900 bg-[url('/photo-2.jpg')] bg-cover bg-center overflow-hidden">
+<div class="py-20 bg-slate-900 bg-[url('/photo-2.jpg')] bg-cover bg-center overflow-hidden">
   <div class="container-fluid max-w-screen-2xl">
     <div
       class="space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-3 xl:gap-x-8 justify-items-center"
@@ -9,7 +9,7 @@
         >
           Бухгалтерские услуги
         </h3>
-        <ul class="pt-0 lg:pt-6 pb-6 space-y-6">
+        <ul class="pt-0 lg:pt-6 space-y-6">
           <li class="flex">
             <!-- Heroicon name: outline/check -->
             <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-slate-300" viewBox="0 0 20 20" fill="currentColor">
@@ -54,7 +54,7 @@
         >
           Корпоративное право
         </h3>
-        <ul class="pt-0 lg:pt-6 pb-6 space-y-6">
+        <ul class="pt-0 lg:pt-6 space-y-6">
           <li class="flex">
             <!-- Heroicon name: outline/check -->
             <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-slate-300" viewBox="0 0 20 20" fill="currentColor">

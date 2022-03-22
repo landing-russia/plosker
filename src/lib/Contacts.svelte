@@ -2,15 +2,15 @@
   import Logo3 from "./Logo3.svelte";
 </script>
 
-<div id="contact-info" class="py-12 lg:py-16 bg-slate-800">
-  <div class="pb-12 lg:pb-16 container-fluid max-w-screen-2xl">
+<div id="contact-info" class="pt-12 lg:pt-20 bg-slate-800">
+  <div class="container-fluid max-w-screen-2xl">
     <h2
       class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
     >
       Контактная информация
     </h2>
   </div>
-  <div class="container-fluid max-w-screen-2xl lg:grid lg:grid-cols-5">
+  <div class="py-16 container-fluid max-w-screen-2xl lg:grid lg:grid-cols-5">
     <div class="bg-slate-800 pb-12 lg:py-16 lg:col-span-2 xl:pr-12">
       <div class="max-w-lg mx-auto">
         <Logo3 />
