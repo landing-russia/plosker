@@ -159,10 +159,10 @@
         <button
           on:click={() => (resume = !resume)}
           type="button"
-          class="backdrop-blur bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-6 py-4 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
+          class="backdrop-blur bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-8 py-3 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
         >
           <p class="text-slate-50 text-2xl font-bold">Татьяна Жидкова</p>
-          <p class="text-slate-50">подробнее</p>
+          <p class="text-slate-50"><span class="border-b border-slate-200">подробнее</span></p>
         </button>
       </div>
     {/if}
