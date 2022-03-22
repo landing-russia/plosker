@@ -127,7 +127,7 @@
             <p class="font-bitter font-bold text-xl 2xl:text-3xl italic">
               Татьяна Жидкова
             </p>
-            <p class="font-bitter font-semibold text-xl italic">
+            <p class="font-bitter font-semibold text-sm 2xl:text-xl italic">
               руководитель налоговой практики
             </p>
           </div>
