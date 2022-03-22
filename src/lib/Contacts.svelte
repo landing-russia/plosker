@@ -213,7 +213,7 @@
     </div>
     <div
       id="contacts"
-      class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 rounded-lg"
+      class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 border border-slate-700 rounded-lg shadow-lg"
     >
       <div class="max-w-lg mx-auto lg:max-w-none">
         <h4
