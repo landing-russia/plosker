@@ -26,7 +26,10 @@
   }
 </script>
 
-<div id="home" class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen">
+<div
+  id="home"
+  class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen"
+>
   <div class="container-fluid overflow-hidden">
     <div class="h-16 mt-4 lg:mt-6 flex items-start justify-between">
       <Logo />
@@ -114,19 +117,26 @@
       <div
         class="relative container-fluid max-w-xl 2xl:max-w-3xl self-center mb-8 mt-16 text-slate-100 space-y-3 z-20"
       >
-        <img
-          class="h-16 w-16 lg:h-20 lg:w-20 2xl:h-24 2xl:w-24 border-2 border-slate-300 mr-3 inline-block rounded-full shadow-lg"
-          src="women-avatar-mono.jpg"
-          alt="women-avatar"
-        />
-        <span class="font-bitter font-bold text-xl 2xl:text-3xl italic"
-          >Татьяна Жидкова</span
-        >
+        <div class="flex items-center">
+          <img
+            class="h-16 w-16 lg:h-20 lg:w-20 2xl:h-24 2xl:w-24 border-2 border-slate-300 mr-3 inline-block rounded-full shadow-lg"
+            src="women-avatar-mono.jpg"
+            alt="women-avatar"
+          />
+          <div>
+            <p class="font-bitter font-bold text-xl 2xl:text-3xl italic">
+              Татьяна Жидкова
+            </p>
+            <p class="font-bitter font-semibold text-xl italic">
+              руководитель налоговой практики
+            </p>
+          </div>
+        </div>
         <div class="h-2" />
         <p class="text-base 2xl:text-2xl">
           <span class="font-bold">2008</span> <br />
-          Российский экономический университет им.&nbsp;Г.В.&nbsp;Плеханова <br /> Специальность:
-          Бухгалтерский учёт и&nbsp;налогообложение
+          Российский экономический университет им.&nbsp;Г.В.&nbsp;Плеханова
+          <br /> Специальность: Бухгалтерский учёт и&nbsp;налогообложение
         </p>
 
         <p class="text-base 2xl:text-2xl">
@@ -152,7 +162,7 @@
           class="backdrop-blur bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-6 py-4 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
         >
           <p class="text-slate-50 text-2xl font-bold">Татьяна Жидкова</p>
-          <p class="text-slate-50">руководитель налоговой практики</p>
+          <p class="text-slate-50">подробнее</p>
         </button>
       </div>
     {/if}
