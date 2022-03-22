@@ -30,7 +30,7 @@
   <div class="container-fluid overflow-hidden">
     <div class="h-16 mt-4 lg:mt-6 flex items-start justify-between">
       <Logo />
-      <div class="hidden sm:block text-right">
+      <a href="#contacts" class="hidden sm:block text-right">
         <div
           class="flex items-center justify-end text-base 2xl:text-xl font-bold text-slate-300"
         >
@@ -55,7 +55,7 @@
         <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-slate-400">
           г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
         </div>
-      </div>
+      </a>
       <button
         on:click={changeStore}
         type="button"

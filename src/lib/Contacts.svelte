@@ -38,9 +38,9 @@
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              <p class="ml-3 text-lg text-gray-300">
+              <a href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_36/Z0oYdQNmSkYCQFpvfX5xcn1nYw==/?indoorLevel=1&ll=33.346335%2C45.203148&utm_source=main_stripe_big&z=17.14" class="ml-3 text-lg text-gray-300">
                 г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
-              </p>
+              </a>
             </dd>
           </div>
           <div>
@@ -152,7 +152,7 @@
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              <p class="ml-3 text-lg text-gray-300">plosker-groupe@ya.ru</p>
+              <a href="mailto:plosker-groupe@ya.ru" class="ml-3 text-lg text-gray-300">plosker-groupe@ya.ru</a>
             </dd>
           </div>
         </dl>

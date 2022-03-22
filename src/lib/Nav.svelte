@@ -72,7 +72,7 @@
     class="relative container-fluid flex justify-between items-start py-4 z-10"
   >
     <Logo2 />
-    <div class="hidden sm:block text-right">
+    <a href="#contacts" class="hidden sm:block text-right">
       <div
         class="flex items-center justify-end text-base 2xl:text-lg font-bold text-slate-300"
       >
@@ -97,7 +97,7 @@
       <div class="text-sm 2xl:text-base leading-4 text-slate-400">
         г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;36, оф.&nbsp;2
       </div>
-    </div>
+    </a>
     <button
       type="button"
       class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
