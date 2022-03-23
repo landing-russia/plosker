@@ -38,7 +38,10 @@
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              <a href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_37/Z0oYdQNmSUABQFpvfX14d3hiYQ==/?indoorLevel=1&ll=33.346279%2C45.196289&utm_source=main_stripe_big&z=19.31" class="ml-3 text-lg text-gray-300">
+              <a
+                href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_37/Z0oYdQNmSUABQFpvfX14d3hiYQ==/?indoorLevel=1&ll=33.346279%2C45.196289&utm_source=main_stripe_big&z=19.31"
+                class="ml-3 text-lg text-gray-300"
+              >
                 г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
               </a>
             </dd>
@@ -152,7 +155,10 @@
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              <a href="mailto:plosker-groupe@ya.ru" class="ml-3 text-lg text-gray-300">plosker-groupe@ya.ru</a>
+              <a
+                href="mailto:plosker-groupe@ya.ru"
+                class="ml-3 text-lg text-gray-300">plosker-groupe@ya.ru</a
+              >
             </dd>
           </div>
         </dl>
@@ -205,8 +211,12 @@
                   <rect width="600" height="603" fill="white" />
                 </clipPath>
               </defs>
-            </svg><span class="text-slate-400 group-hover:text-slate-50 transition duration-200">Связаться по&nbsp;WhatsApp</span
-            ></a
+            </svg>
+            <p
+              class="text-slate-400 group-hover:text-slate-50 transition duration-200"
+            >
+              Связаться по&nbsp;<span class="font-bold">WhatsApp</span>
+            </p></a
           >
         </div>
       </div>
