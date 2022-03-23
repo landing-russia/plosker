@@ -67,10 +67,10 @@
               </svg>
               <a
                 href="tel:+79789461229"
-                class="ml-3 text-lg text-gray-300 font-bold"
+                class="ml-3 text-lg text-gray-300 font-semibold"
               >
                 <span
-                  ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+                  ><span class="font-normal text-slate-400">+7&nbsp;978</span
                   >&nbsp;946-12-29</span
                 >
               </a>
@@ -97,10 +97,10 @@
               </svg>
               <a
                 href="tel:+79789461228"
-                class="ml-3 text-lg text-gray-300 font-bold"
+                class="ml-3 text-lg text-gray-300 font-semibold"
               >
                 <span
-                  ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+                  ><span class="font-normal text-slate-400">+7&nbsp;978</span
                   >&nbsp;946-12-28</span
                 >
               </a>
@@ -127,10 +127,10 @@
               </svg>
               <a
                 href="tel:+79162105934"
-                class="ml-3 text-lg text-gray-300 font-bold"
+                class="ml-3 text-lg text-gray-300 font-semibold"
               >
                 <span
-                  ><span class="font-semibold text-slate-400">+7&nbsp;916</span
+                  ><span class="font-normal text-slate-400">+7&nbsp;916</span
                   >&nbsp;210-59-34</span
                 >
               </a>
