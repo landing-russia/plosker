@@ -26,6 +26,15 @@
   }
 </script>
 
+<svelte:head>
+  <title>PLOSKER GROUPE - Юридическая компания</title>
+  <meta name="description" content="Налоговая практика для юридических лиц и индивидуальных предпринимателей" />
+  <meta
+    name="robots"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  />
+</svelte:head>
+
 <div
   id="home"
   class="bg-slate-900 grid grid-cols-1 lg:grid-cols-2 lg:min-h-screen"
