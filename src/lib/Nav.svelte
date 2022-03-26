@@ -64,7 +64,7 @@
 <svelte:window on:keydown={isNavEsc} />
 
 <div
-  class="fixed w-full backdrop-blur bg-slate-900/90 border-b border-slate-800 shadow transform ease-in-out transition-all duration-200 {isNav
+  class="fixed w-full backdrop-blur bg-slate-900/90 border-b border-slate-800 shadow-lg transform ease-in-out transition-all duration-200 {isNav
     ? 'translate-y-0'
     : '-translate-y-full'} z-40"
 >
