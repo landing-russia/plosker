@@ -12,7 +12,7 @@
       class="px-4 pb-12 md:pb-0 sm:px-6 md:flex md:flex-col md:pl-0 md:pr-10 md:border-r md:border-slate-800"
     >
       <div class="md:flex-shrink-0">
-        <img class="h-20 w-auto" src="shikardo.png" alt="Shikardo" />
+        <img class="h-20 w-auto" width="276" height="127" src="shikardo.png" alt="Shikardo" />
       </div>
       <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
         <div class="relative text-lg font-medium text-slate-100 md:flex-grow">
@@ -56,7 +56,7 @@
       class="px-4 pt-12 md:pt-0 border-t-2 border-slate-800 sm:px-6 md:pr-0 md:border-t-0 md:border-l"
     >
       <div class="md:flex-shrink-0">
-        <img class="h-20 w-auto" src="ultramarin.png" alt="Ultramarin" />
+        <img class="h-20 w-auto" width="300" height="212" src="ultramarin.png" alt="Ultramarin" />
       </div>
       <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
         <div class="relative text-lg font-medium text-slate-100 md:flex-grow">
