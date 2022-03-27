@@ -232,11 +232,11 @@
       class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 border border-slate-700 rounded-lg shadow-lg"
     >
       <div class="max-w-lg mx-auto lg:max-w-none">
-        <h4
+        <h3
           class="py-16 text-2xl lg:text-3xl text-slate-200 font-bitter font-bold"
         >
           Оставьте сообщение или&nbsp;заявку
-        </h4>
+        </h3>
         <form action="" method="POST" class="grid grid-cols-1 gap-y-6">
           <div>
             <label for="full-name" class="sr-only">Full name</label>
