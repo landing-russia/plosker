@@ -9,7 +9,7 @@
 >
   <div class="space-y-2 pt-2">
     <Logo2 />
-    <p class="text-lg text-center text-slate-500 font-bitter font-normal">
+    <p class="text-base text-center text-slate-400 font-bitter font-normal">
       &copy;&nbsp;{currentYear}
     </p>
   </div>
