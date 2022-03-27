@@ -9,9 +9,11 @@
       class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-3 xl:gap-x-8 justify-items-center"
     >
       <div
-        class="w-full h-72 lg:h-full bg-[url('/photo-1.webp')] bg-cover bg-center overflow-hidden border border-slate-700 rounded-lg shadow-lg"
-      />
-      <ul class="pt-0 lg:pt-6 pb-6 space-y-6 max-w-lg">
+        class="h-full w-full lg:h-144">
+        <img class="block mx-auto lg:mr-0 lg:ml-auto h-52 lg:w-128 lg:h-auto object-contain object-center" src="codex.webp" alt="Налоговый кодекс">
+      </div>
+      <ul class="pt-0 lg:pt-6 space-y-6 max-w-lg"
+      >
         <li class="flex">
           <!-- Heroicon name: outline/check -->
           <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 text-slate-300" viewBox="0 0 20 20" fill="currentColor">
