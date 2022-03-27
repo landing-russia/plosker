@@ -10,7 +10,7 @@
     >
       <div
         class="h-full w-full lg:h-144">
-        <img class="block mx-auto lg:mr-0 lg:ml-auto h-52 lg:w-128 lg:h-auto object-contain object-center" src="codex.webp" alt="Налоговый кодекс">
+        <img class="block mx-auto lg:mr-0 lg:ml-auto h-52 lg:w-128 lg:h-auto object-contain object-center" width="1400" height="1000" src="codex.webp" alt="Налоговый кодекс">
       </div>
       <ul class="pt-0 lg:pt-6 space-y-6 max-w-lg"
       >
