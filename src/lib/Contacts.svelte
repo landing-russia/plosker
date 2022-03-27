@@ -5,7 +5,7 @@
 <div id="contact-info" class="pt-12 lg:pt-20 bg-slate-800">
   <div class="container-fluid max-w-screen-2xl">
     <h2
-      class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
+      class="text-4xl font-bold text-white sm:text-5xl sm:leading-none lg:text-6xl text-center"
     >
       Контактная информация
     </h2>
@@ -15,13 +15,13 @@
       <div class="max-w-lg mx-auto">
         <Logo3 />
         <!-- <p class="mt-3 text-lg leading-6 text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p> -->
-        <dl class="mt-8 text-base text-gray-500 space-y-5">
+        <dl class="mt-8 text-base text-slate-300 space-y-5">
           <div>
             <dt class="sr-only">Адрес</dt>
             <dd class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="flex-shrink-0 h-6 w-6 pt-1 text-gray-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -41,7 +41,7 @@
               <a
               aria-label="На карте"
                 href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_37/Z0oYdQNmSUABQFpvfX14d3hiYQ==/?indoorLevel=1&ll=33.346279%2C45.196289&utm_source=main_stripe_big&z=19.31"
-                class="ml-3 text-lg text-gray-300"
+                class="ml-3 text-lg text-slate-100"
               >
                 г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
               </a>
@@ -52,7 +52,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/phone -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-gray-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -69,10 +69,10 @@
               <a
               aria-label="Позвонить по телефону"
                 href="tel:+79789461229"
-                class="ml-3 text-lg text-gray-300 font-semibold"
+                class="ml-3 text-lg text-slate-100 font-semibold"
               >
                 <span
-                  ><span class="font-normal text-slate-400">+7&nbsp;978</span
+                  ><span class="font-normal text-slate-300">+7&nbsp;978</span
                   >&nbsp;946-12-29</span
                 >
               </a>
@@ -83,7 +83,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/phone -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-gray-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -100,10 +100,10 @@
               <a
               aria-label="Позвонить по телефону"
                 href="tel:+79789461228"
-                class="ml-3 text-lg text-gray-300 font-semibold"
+                class="ml-3 text-lg text-slate-100 font-semibold"
               >
                 <span
-                  ><span class="font-normal text-slate-400">+7&nbsp;978</span
+                  ><span class="font-normal text-slate-300">+7&nbsp;978</span
                   >&nbsp;946-12-28</span
                 >
               </a>
@@ -114,7 +114,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/phone -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-gray-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -131,10 +131,10 @@
               <a
               aria-label="Позвонить по телефону"
                 href="tel:+79162105934"
-                class="ml-3 text-lg text-gray-300 font-semibold"
+                class="ml-3 text-lg text-slate-100 font-semibold"
               >
                 <span
-                  ><span class="font-normal text-slate-400">+7&nbsp;916</span
+                  ><span class="font-normal text-slate-300">+7&nbsp;916</span
                   >&nbsp;210-59-34</span
                 >
               </a>
@@ -145,7 +145,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/mail -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-gray-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -162,7 +162,7 @@
               <a
               aria-label="Email"
                 href="mailto:plosker-groupe@ya.ru"
-                class="ml-3 text-lg text-gray-300">plosker-groupe@ya.ru</a
+                class="ml-3 text-lg text-slate-100">plosker-groupe@ya.ru</a
               >
             </dd>
           </div>
@@ -219,7 +219,7 @@
               </defs>
             </svg>
             <p
-              class="text-slate-400 group-hover:text-slate-50 transition duration-200"
+              class="text-slate-300 group-hover:text-white transition duration-200"
             >
               Связаться по&nbsp;<span class="font-bold">WhatsApp</span>
             </p></a
@@ -233,7 +233,7 @@
     >
       <div class="max-w-lg mx-auto lg:max-w-none">
         <h3
-          class="py-16 text-2xl lg:text-3xl text-slate-200 font-bitter font-bold"
+          class="py-16 text-2xl lg:text-3xl text-slate-100 font-bitter font-bold"
         >
           Оставьте сообщение или&nbsp;заявку
         </h3>
@@ -245,7 +245,7 @@
               name="full-name"
               id="full-name"
               autocomplete="name"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Имя"
             />
           </div>
@@ -256,7 +256,7 @@
               name="email"
               type="email"
               autocomplete="email"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Электронная почта"
             />
           </div>
@@ -267,7 +267,7 @@
               name="phone"
               id="phone"
               autocomplete="tel"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Телефон (необязательно)"
             />
           </div>
@@ -277,7 +277,7 @@
               id="message"
               name="message"
               rows="4"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-300 placeholder-slate-400 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Сообщение"
             />
           </div>
@@ -285,7 +285,7 @@
             <button
             aria-label="Отправить"
               type="submit"
-              class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
+              class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-800 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
               >Отправить</button
             >
           </div>

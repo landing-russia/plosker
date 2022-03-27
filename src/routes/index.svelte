@@ -51,11 +51,11 @@
         class="hidden sm:block text-right"
       >
         <div
-          class="flex items-center justify-end text-base 2xl:text-xl font-bold text-slate-300"
+          class="flex items-center justify-end text-base 2xl:text-xl font-bold text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 mr-1 text-slate-400"
+            class="h-4 w-4 mr-1 text-slate-300"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -67,11 +67,11 @@
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg><span
-            ><span class="font-semibold text-slate-400">+7&nbsp;978</span
+            ><span class="font-semibold text-slate-300">+7&nbsp;978</span
             >&nbsp;946-12-29</span
           >
         </div>
-        <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-slate-400">
+        <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-white">
           г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
         </div>
       </a>
@@ -103,14 +103,14 @@
       <Pattern2 />
       <div class="relative z-10">
         <h1
-          class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-7.5xl font-bold text-slate-50"
+          class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-7.5xl font-bold text-white"
         >
-          Специализация&nbsp;— <span class="text-slate-400"
+          Специализация&nbsp;— <span class="text-slate-300"
             >налоговое&nbsp;право</span
           >
         </h1>
         <p
-          class="text-slate-400 text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal mt-6 max-w-4xl"
+          class="text-slate-300 text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal mt-6 max-w-4xl"
         >
           Налоговая практика для юридических лиц и&nbsp;индивидуальных
           предпринимателей
@@ -133,7 +133,7 @@
         on:click={() => (resume = false)}>Закрыть</button
       >
       <div
-        class="relative container-fluid max-w-xl 2xl:max-w-3xl self-center mb-8 mt-16 text-slate-100 space-y-3 z-20"
+        class="relative container-fluid max-w-xl 2xl:max-w-3xl self-center mb-8 mt-16 text-white space-y-3 z-20"
       >
         <div class="flex items-center">
           <img
@@ -180,8 +180,8 @@
           type="button"
           class="backdrop-blur-sm bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-8 py-3 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
         >
-          <p class="text-slate-50 text-2xl font-bold">Татьяна Жидкова</p>
-          <p class="text-slate-50">
+          <p class="text-white text-2xl font-bold">Татьяна Жидкова</p>
+          <p class="text-white">
             <span class="border-b border-slate-200">подробнее</span>
           </p>
         </button>

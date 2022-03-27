@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="bg-slate-900 h-32 w-full flex items-center justify-center text-gray-400 text-lg font-semibold shadow"
+  class="bg-slate-900 h-32 w-full flex items-center justify-center shadow"
 >
   <div class="space-y-2 pt-2">
     <Logo2 />

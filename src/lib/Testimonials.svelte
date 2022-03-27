@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <section id="testimonials" class="py-12 lg:py-20 bg-slate-900">
   <h2
-    class="text-4xl font-bold text-slate-50 sm:text-5xl sm:leading-none lg:text-6xl text-center"
+    class="text-4xl font-bold text-white sm:text-5xl sm:leading-none lg:text-6xl text-center"
   >
     Отзывы
   </h2>
@@ -15,7 +15,7 @@
         <img class="h-20" src="shikardo.png" alt="Shikardo" />
       </div>
       <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
-        <div class="relative text-lg font-medium text-white md:flex-grow">
+        <div class="relative text-lg font-medium text-slate-100 md:flex-grow">
           <svg
             class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-slate-600"
             fill="currentColor"
@@ -45,8 +45,8 @@
               />
             </div>
             <div class="ml-4">
-              <div class="text-base font-medium text-white">Елена Ханга</div>
-              <div class="text-base font-medium text-slate-200">директор</div>
+              <div class="text-base font-medium text-slate-100">Елена Ханга</div>
+              <div class="text-sm font-medium text-slate-300">директор</div>
             </div>
           </div>
         </footer>
@@ -59,7 +59,7 @@
         <img class="h-20" src="ultramarin.png" alt="Ultramarin" />
       </div>
       <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
-        <div class="relative text-lg font-medium text-white md:flex-grow">
+        <div class="relative text-lg font-medium text-slate-100 md:flex-grow">
           <svg
             class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-slate-600"
             fill="currentColor"
@@ -88,8 +88,8 @@
               />
             </div>
             <div class="ml-4">
-              <div class="text-base font-medium text-white">Елена Ханга</div>
-              <div class="text-base font-medium text-slate-200">директор</div>
+              <div class="text-base font-medium text-slate-100">Елена Ханга</div>
+              <div class="text-sm font-medium text-slate-300">директор</div>
             </div>
           </div>
         </footer>
