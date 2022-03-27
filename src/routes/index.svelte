@@ -178,7 +178,7 @@
           aria-label="Подробнее"
           on:click={() => (resume = !resume)}
           type="button"
-          class="backdrop-blur-sm bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-8 py-3 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
+          class="backdrop-blur-sm bg-slate-800/50 hover:bg-slate-900/60 text-center font-bitter italic px-8 py-3 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
         >
           <p class="text-white text-2xl font-bold">Татьяна Жидкова</p>
           <p class="text-white">
