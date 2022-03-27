@@ -119,7 +119,7 @@
     </div>
   </div>
   <div
-    class="relative grid min-h-144 lg:min-h-full pb-10 bg-[url('/women-mono.webp')] bg-cover bg-center overflow-hidden"
+    class="relative grid min-h-144 lg:min-h-full pb-4 bg-[url('/women-mono.webp')] bg-cover bg-center overflow-hidden"
   >
     {#if resume}
       <div
