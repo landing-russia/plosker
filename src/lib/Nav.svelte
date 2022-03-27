@@ -72,7 +72,7 @@
     class="relative container-fluid flex justify-between items-start py-4 z-10"
   >
     <Logo2 />
-    <a href="#contact-info" class="hidden sm:block text-right">
+    <a href="#contact-info" aria-label="Контактная информация" class="hidden sm:block text-right">
       <div
         class="flex items-center justify-end text-base 2xl:text-lg font-bold text-slate-300"
       >
@@ -100,6 +100,7 @@
     </a>
     <button
       type="button"
+      aria-label="Меню"
       class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
       on:click={isOpenStore.update(() => (isOpen = !isOpen))}
       ><svg
@@ -138,6 +139,7 @@
     <div class="mt-1 flex items-start justify-between">
       <Logo2 />
       <button
+      aria-label="Закрыть"
         on:click={isOpenStore.update(() => (isOpen = false))}
         type="button"
         class="p-0.5 text-slate-400 rounded-full focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
@@ -159,6 +161,7 @@
     <div class="mt-10 flex-grow text-2xl font-semibold font-bitter text-slate-300 space-y-5">
       <a
         href="#practice"
+        aria-label="Практика"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
       ><span
@@ -167,6 +170,7 @@
       </a>
       <a
         href="#price"
+        aria-label="Тарифы"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
       ><span
@@ -175,6 +179,7 @@
       </a>
       <a
         href="#testimonials"
+        aria-label="Отзывы"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
       ><span
@@ -183,6 +188,7 @@
       </a>
       <a
         href="#contact-info"
+        aria-label="Контактная информация"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
       ><span

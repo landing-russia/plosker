@@ -1,5 +1,6 @@
-<a href="/"
-  ><svg
+<a href="/" aria-label="Logo PLOSKER GROUPE"
+  >
+  <svg
     class="h-10 2xl:h-12 w-auto"
     width="311"
     height="68"

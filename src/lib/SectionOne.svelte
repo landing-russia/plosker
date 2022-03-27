@@ -9,7 +9,7 @@
       class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-3 xl:gap-x-8 justify-items-center"
     >
       <div
-        class="w-full h-72 lg:h-full bg-[url('/photo-1.jpg')] bg-cover bg-center overflow-hidden border border-slate-700 rounded-lg shadow-lg"
+        class="w-full h-72 lg:h-full bg-[url('/photo-1.webp')] bg-cover bg-center overflow-hidden border border-slate-700 rounded-lg shadow-lg"
       />
       <ul class="pt-0 lg:pt-6 pb-6 space-y-6 max-w-lg">
         <li class="flex">

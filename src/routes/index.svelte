@@ -28,7 +28,10 @@
 
 <svelte:head>
   <title>PLOSKER GROUPE - Юридическая компания</title>
-  <meta name="description" content="Налоговая практика для юридических лиц и индивидуальных предпринимателей" />
+  <meta
+    name="description"
+    content="Налоговая практика для юридических лиц и индивидуальных предпринимателей"
+  />
   <meta
     name="robots"
     content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
@@ -42,7 +45,11 @@
   <div class="container-fluid overflow-hidden">
     <div class="h-16 mt-4 lg:mt-6 flex items-start justify-between">
       <Logo />
-      <a href="#contact-info" class="hidden sm:block text-right">
+      <a
+        href="#contact-info"
+        aria-label="Контактная информация"
+        class="hidden sm:block text-right"
+      >
         <div
           class="flex items-center justify-end text-base 2xl:text-xl font-bold text-slate-300"
         >
@@ -70,6 +77,7 @@
       </a>
       <button
         on:click={changeStore}
+        aria-label="Меню"
         type="button"
         class="sm:hidden rounded-full text-slate-300 hover:text-slate-100 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 z-10"
         ><svg
@@ -111,7 +119,7 @@
     </div>
   </div>
   <div
-    class="relative grid min-h-144 lg:min-h-full pb-10 bg-[url('/women-mono.jpg')] bg-cover bg-center overflow-hidden"
+    class="relative grid min-h-144 lg:min-h-full pb-10 bg-[url('/women-mono.webp')] bg-cover bg-center overflow-hidden"
   >
     {#if resume}
       <div
@@ -119,6 +127,7 @@
         class="absolute inset-0 backdrop-blur bg-slate-900/75 z-10"
       />
       <button
+        aria-label="Закрыть"
         class="absolute right-6 top-6 backdrop-blur bg-slate-500/30 hover:bg-slate-600/40 border border-slate-500 px-3 py-1 text-slate-100 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200 z-20"
         type="button"
         on:click={() => (resume = false)}>Закрыть</button
@@ -129,7 +138,7 @@
         <div class="flex items-center">
           <img
             class="h-16 w-16 lg:h-20 lg:w-20 2xl:h-24 2xl:w-24 border-2 border-slate-300 mr-3 inline-block rounded-full shadow-lg"
-            src="women-avatar-mono.jpg"
+            src="women-avatar-mono.webp"
             alt="women-avatar"
           />
           <div>
@@ -166,12 +175,15 @@
     {:else}
       <div class="h-144 lg:h-full flex items-end justify-center">
         <button
+          aria-label="Подробнее"
           on:click={() => (resume = !resume)}
           type="button"
           class="backdrop-blur bg-slate-900/50 hover:bg-slate-900/60 text-center font-bitter italic px-8 py-3 border border-slate-500 rounded-lg shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800 transition-all duration-200"
         >
           <p class="text-slate-50 text-2xl font-bold">Татьяна Жидкова</p>
-          <p class="text-slate-50"><span class="border-b border-slate-200">подробнее</span></p>
+          <p class="text-slate-50">
+            <span class="border-b border-slate-200">подробнее</span>
+          </p>
         </button>
       </div>
     {/if}

@@ -1,4 +1,4 @@
-<div class="py-20 bg-slate-900 bg-[url('/photo-2.jpg')] bg-cover bg-center overflow-hidden">
+<div class="py-20 bg-slate-900 bg-[url('/photo-2.webp')] bg-cover bg-center overflow-hidden">
   <div class="container-fluid max-w-screen-2xl">
     <div
       class="space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-3 xl:gap-x-8 justify-items-center"

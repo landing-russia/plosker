@@ -39,6 +39,7 @@
                 />
               </svg>
               <a
+              aria-label="На карте"
                 href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_37/Z0oYdQNmSUABQFpvfX14d3hiYQ==/?indoorLevel=1&ll=33.346279%2C45.196289&utm_source=main_stripe_big&z=19.31"
                 class="ml-3 text-lg text-gray-300"
               >
@@ -66,6 +67,7 @@
                 />
               </svg>
               <a
+              aria-label="Позвонить по телефону"
                 href="tel:+79789461229"
                 class="ml-3 text-lg text-gray-300 font-semibold"
               >
@@ -96,6 +98,7 @@
                 />
               </svg>
               <a
+              aria-label="Позвонить по телефону"
                 href="tel:+79789461228"
                 class="ml-3 text-lg text-gray-300 font-semibold"
               >
@@ -126,6 +129,7 @@
                 />
               </svg>
               <a
+              aria-label="Позвонить по телефону"
                 href="tel:+79162105934"
                 class="ml-3 text-lg text-gray-300 font-semibold"
               >
@@ -156,6 +160,7 @@
                 />
               </svg>
               <a
+              aria-label="Email"
                 href="mailto:plosker-groupe@ya.ru"
                 class="ml-3 text-lg text-gray-300">plosker-groupe@ya.ru</a
               >
@@ -164,6 +169,7 @@
         </dl>
         <div class="mt-10 flex">
           <a
+          aria-label="Позвонить по WhatsApp"
             class="group w-full sm:w-auto flex items-center justify-center px-7 py-5 border border-slate-700 bg-slate-900 hover:bg-slate-700 rounded-lg shadow-lg transition duration-200"
             href="https://api.whatsapp.com/send?phone=+79162105934"
           >
@@ -277,6 +283,7 @@
           </div>
           <div>
             <button
+            aria-label="Отправить"
               type="submit"
               class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
               >Отправить</button

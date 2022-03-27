@@ -1,4 +1,4 @@
-<a href="#home"
+<a href="#home" aria-label="Logo PLOSKER GROUPE"
   ><svg
     class="h-10 w-auto"
     width="311"
