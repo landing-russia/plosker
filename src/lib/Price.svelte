@@ -134,7 +134,7 @@
           <h3 class="text-xl font-semibold text-white">Бизнес лайт</h3>
 
           <p
-            class="absolute top-0 py-1.5 px-4 bg-slate-50 text-slate-700 rounded-full text-xs font-semibold uppercase tracking-wide transform -translate-y-1/2"
+            class="absolute top-0 py-1.5 px-4 bg-slate-50 text-slate-700 rounded-full text-xs font-bold uppercase tracking-wide transform -translate-y-1/2"
           >
             Оптимальный
           </p>
