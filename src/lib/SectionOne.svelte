@@ -9,8 +9,8 @@
       class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-3 xl:gap-x-8 justify-items-center"
     >
       <div
-        class="h-full w-full">
-        <img class="block max-w-lg mx-auto lg:mr-0 lg:ml-auto lg:max-w-full lg:h-auto object-contain object-center" width="1400" height="1000" src="codex.webp" alt="Налоговый кодекс">
+        class="h-full w-full max-w-lg lg:max-w-full">
+        <img class="block w-full mx-auto lg:mr-0 lg:ml-auto lg:h-auto object-contain object-center" width="1400" height="1000" src="codex.webp" alt="Налоговый кодекс">
       </div>
       <ul class="pt-0 lg:pt-6 space-y-6 max-w-lg"
       >
