@@ -1,24 +1,37 @@
 <script>
   import Logo3 from "./Logo3.svelte";
   import { Email } from "$lib/smtp";
+  import { createForm } from "svelte-forms-lib";
+  import * as yup from "yup";
 
-  let username;
-  let email;
-  let phone;
-  let message;
   let thanks = false;
 
-  const onSubmit = () => {
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "ploskergroupe@gmail.com",
-      Password: "ploskergroupe4321#",
-      To: "ploskergroupe@gmail.com",
-      From: email,
-      Subject: "www.plosker-groupe.ru",
-      Body: message + " " + phone,
-    }).then((message) => console.log(message)).then(() => thanks = true);
-  };
+  const { form, errors, handleSubmit, handleChange } = createForm({
+    initialValues: {
+      username: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+    validationSchema: yup.object().shape({
+      username: yup.string().min(3, "Не меньше 3 символов").max(30, "Не больше 30 символов").required("Имя обязательно").trim(),
+      email: yup.string().email("Введите правильный email").required("Электронная почта обязательна").trim(),
+      message: yup.string().min(3, "Не меньше 5 символов").max(250, "Слишко большой текст. Сократите.").required("Сообщение обязательно").trim(),
+    }),
+    onSubmit: ({ username, email, phone, message }) => {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "ploskergroupe@gmail.com",
+        Password: "ploskergroupe4321#",
+        To: "ploskergroupe@gmail.com",
+        From: email,
+        Subject: "www.plosker-groupe.ru",
+        Body: message + " " + username + " " + phone,
+      })
+        .then((message) => console.log(message))
+        .then(() => (thanks = true));
+    },
+  });
 </script>
 
 <div id="contact-info" class="pt-12 lg:pt-20 bg-slate-800">
@@ -250,82 +263,107 @@
       id="contacts"
       class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 border border-slate-700 rounded-lg shadow-lg"
     >
-    {#if thanks}
-       <div class="text-slate-100 text-2xl text-center h-full p-6 grid place-content-center">
-         <p class="text-slate-100 text-2xl lg:text-4xl font-semibold font-bitter">Спасибо!</p>
-         <p class="mt-3 text-slate-100 text-lg lg:text-xl font-normal">Сообщения и заявки рассматриваются в рабочие часы</p>
-         <p class="mt-3 text-slate-300 text-lg lg:text-xl font-normal">ПН-ПТ 9:00-18:00</p>
-       </div>
-    {:else}
-    <div class="max-w-lg mx-auto lg:max-w-none">
-      <h3
-        class="py-16 text-2xl lg:text-3xl text-slate-100 font-bitter font-bold"
-      >
-        Оставьте сообщение или&nbsp;заявку
-      </h3>
-      <form
-        on:submit|preventDefault={onSubmit}
-        class="grid grid-cols-1 gap-y-6"
-      >
-        <div>
-          <label for="username" class="sr-only">Имя</label>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            autocomplete="username"
-            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-            placeholder="Имя"
-            bind:value={username}
-          />
-        </div>
-        <div>
-          <label for="email" class="sr-only">Электронная почта</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-            placeholder="Электронная почта"
-            bind:value={email}
-          />
-        </div>
-        <div>
-          <label for="phone" class="sr-only">Телефон</label>
-          <input
-            type="text"
-            name="phone"
-            id="phone"
-            autocomplete="tel"
-            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-            placeholder="Телефон (необязательно)"
-            bind:value={phone}
-          />
-        </div>
-        <div>
-          <label for="message" class="sr-only">Сообщение</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-            placeholder="Сообщение"
-            bind:value={message}
-          />
-        </div>
-        <div>
-          <button
-            aria-label="Отправить"
-            type="submit"
-            class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-800 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
-            >Отправить</button
+      {#if thanks}
+        <div
+          class="text-slate-100 text-2xl text-center h-full p-6 grid place-content-center"
+        >
+          <p
+            class="text-slate-100 text-2xl lg:text-4xl font-semibold font-bitter"
           >
+            Спасибо!
+          </p>
+          <p class="mt-3 text-slate-100 text-lg lg:text-xl font-normal">
+            Сообщения и заявки рассматриваются в рабочие часы
+          </p>
+          <p class="mt-3 text-slate-300 text-lg lg:text-xl font-normal">
+            ПН-ПТ 9:00-18:00
+          </p>
         </div>
-      </form>
-    </div>
-    {/if}
-      
+      {:else}
+        <div class="max-w-lg mx-auto lg:max-w-none">
+          <h3
+            class="py-16 text-2xl lg:text-3xl text-slate-100 font-bitter font-bold"
+          >
+            Оставьте сообщение или&nbsp;заявку
+          </h3>
+          <form
+            on:submit|preventDefault={handleSubmit}
+            class="grid grid-cols-1 gap-y-6"
+          >
+            <div>
+              <label for="username" class="sr-only">Имя</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                autocomplete="username"
+                class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+                placeholder="Имя"
+                on:change={handleChange}
+                bind:value={$form.username}
+              />
+              {#if $errors.username}
+                <small class="block my-1 text-xs italic text-slate-400">{$errors.username}</small>
+              {/if}
+            </div>
+            <div>
+              <label for="email" class="sr-only">Электронная почта</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+                placeholder="Электронная почта"
+                on:change={handleChange}
+                bind:value={$form.email}
+              />
+              {#if $errors.email}
+                <small class="block my-1 text-xs italic text-slate-400">{$errors.email}</small>
+              {/if}
+            </div>
+            <div>
+              <label for="phone" class="sr-only">Телефон</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                autocomplete="tel"
+                class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+                placeholder="Телефон (необязательно)"
+                on:change={handleChange}
+                bind:value={$form.phone}
+              />
+              {#if $errors.phone}
+                <small class="block my-1 text-xs italic text-slate-400">{$errors.phone}</small>
+              {/if}
+            </div>
+            <div>
+              <label for="message" class="sr-only">Сообщение</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+                placeholder="Сообщение"
+                on:change={handleChange}
+                bind:value={$form.message}
+              />
+              {#if $errors.message}
+                <small class="block my-1 text-xs italic text-slate-400">{$errors.message}</small>
+              {/if}
+            </div>
+            <div>
+              <button
+                aria-label="Отправить"
+                type="submit"
+                class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-800 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
+                >Отправить</button
+              >
+            </div>
+          </form>
+        </div>
+      {/if}
     </div>
   </div>
 </div>
