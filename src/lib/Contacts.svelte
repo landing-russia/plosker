@@ -17,8 +17,8 @@
       From: email,
       Subject: "www.plosker-groupe.ru",
       Body: message + phone,
-    }).then((message) => alert(message));
-    console.log("dasdsdas!!!", { username, email, phone, message });
+    }).then((message) => console.log(message));
+    // console.log("dasdsdas!!!", { username, email, phone, message });
   };
 </script>
 
