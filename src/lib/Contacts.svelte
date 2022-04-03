@@ -1,5 +1,24 @@
 <script>
   import Logo3 from "./Logo3.svelte";
+  import { Email } from "$lib/smtp";
+
+  let username;
+  let email;
+  let phone;
+  let message;
+
+  const onSubmit = () => {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "ploskergroupe",
+      Password: "ploskergroupe4321#",
+      To: "ploskergroupe@gmail.com",
+      From: email,
+      Subject: "www.plosker-groupe.ru",
+      Body: message + phone,
+    }).then((message) => alert(message));
+    console.log("dasdsdas!!!", { username, email, phone, message });
+  };
 </script>
 
 <div id="contact-info" class="pt-12 lg:pt-20 bg-slate-800">
@@ -39,7 +58,7 @@
                 />
               </svg>
               <a
-              aria-label="На карте"
+                aria-label="На карте"
                 href="https://yandex.ru/maps/11463/evpatoria/house/prospekt_pobedy_37/Z0oYdQNmSUABQFpvfX14d3hiYQ==/?indoorLevel=1&ll=33.346279%2C45.196289&utm_source=main_stripe_big&z=19.31"
                 class="ml-3 text-lg text-slate-100"
               >
@@ -67,7 +86,7 @@
                 />
               </svg>
               <a
-              aria-label="Позвонить по телефону"
+                aria-label="Позвонить по телефону"
                 href="tel:+79789461229"
                 class="ml-3 text-lg text-slate-100 font-semibold"
               >
@@ -98,7 +117,7 @@
                 />
               </svg>
               <a
-              aria-label="Позвонить по телефону"
+                aria-label="Позвонить по телефону"
                 href="tel:+79789461228"
                 class="ml-3 text-lg text-slate-100 font-semibold"
               >
@@ -129,7 +148,7 @@
                 />
               </svg>
               <a
-              aria-label="Позвонить по телефону"
+                aria-label="Позвонить по телефону"
                 href="tel:+79162105934"
                 class="ml-3 text-lg text-slate-100 font-semibold"
               >
@@ -160,7 +179,7 @@
                 />
               </svg>
               <a
-              aria-label="Email"
+                aria-label="Email"
                 href="mailto:plosker-groupe@ya.ru"
                 class="ml-3 text-lg text-slate-100">plosker-groupe@ya.ru</a
               >
@@ -169,7 +188,7 @@
         </dl>
         <div class="mt-10 flex">
           <a
-          aria-label="Позвонить по WhatsApp"
+            aria-label="Позвонить по WhatsApp"
             class="group w-full sm:w-auto flex items-center justify-center px-7 py-5 border border-slate-700 bg-slate-900 hover:bg-slate-700 rounded-lg shadow-lg transition duration-200"
             href="https://api.whatsapp.com/send?phone=+79162105934"
           >
@@ -237,16 +256,20 @@
         >
           Оставьте сообщение или&nbsp;заявку
         </h3>
-        <form action="" method="POST" class="grid grid-cols-1 gap-y-6">
+        <form
+          on:submit|preventDefault={onSubmit}
+          class="grid grid-cols-1 gap-y-6"
+        >
           <div>
-            <label for="full-name" class="sr-only">Full name</label>
+            <label for="username" class="sr-only">Имя</label>
             <input
               type="text"
-              name="full-name"
-              id="full-name"
-              autocomplete="name"
+              name="username"
+              id="username"
+              autocomplete="username"
               class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Имя"
+              bind:value={username}
             />
           </div>
           <div>
@@ -258,6 +281,7 @@
               autocomplete="email"
               class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Электронная почта"
+              bind:value={email}
             />
           </div>
           <div>
@@ -269,6 +293,7 @@
               autocomplete="tel"
               class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Телефон (необязательно)"
+              bind:value={phone}
             />
           </div>
           <div>
@@ -279,11 +304,12 @@
               rows="4"
               class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
               placeholder="Сообщение"
+              bind:value={message}
             />
           </div>
           <div>
             <button
-            aria-label="Отправить"
+              aria-label="Отправить"
               type="submit"
               class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-800 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
               >Отправить</button
