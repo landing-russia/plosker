@@ -9,9 +9,10 @@
 
   const onSubmit = () => {
     Email.send({
-      Host: "smtp.gmail.com",
-      Username: "ploskergroupe",
-      Password: "ploskergroupe4321#",
+      SecureToken: "21b1e173-66d5-4a0b-b47b-132241eacf50",
+      // Host: "smtp.elasticemail.com",
+      // Username: "ploskergroupe@gmail.com",
+      // Password: "2F938A6BD1EABDE6B32781FF33E497272C4D",
       To: "ploskergroupe@gmail.com",
       From: email,
       Subject: "www.plosker-groupe.ru",
