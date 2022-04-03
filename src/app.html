@@ -4,9 +4,23 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M7CNNF3VHD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-M7CNNF3VHD");
+    </script>
     <script>
       if (
-        localStorage.theme === "dark" 
+        localStorage.theme === "dark"
         // ||
         // (!("theme" in localStorage) &&
         //   window.matchMedia("(prefers-color-scheme: dark)").matches)
