@@ -6,6 +6,7 @@
   let email;
   let phone;
   let message;
+  let thanks = false;
 
   const onSubmit = () => {
     Email.send({
@@ -15,8 +16,8 @@
       To: "ploskergroupe@gmail.com",
       From: email,
       Subject: "www.plosker-groupe.ru",
-      Body: message + phone,
-    }).then((message) => alert(message));
+      Body: message + " " + phone,
+    }).then((message) => console.log(message)).then(() => thanks = true);
   };
 </script>
 
@@ -249,73 +250,82 @@
       id="contacts"
       class="pb-12 px-6 sm:px-12 bg-slate-900 lg:col-span-3 border border-slate-700 rounded-lg shadow-lg"
     >
-      <div class="max-w-lg mx-auto lg:max-w-none">
-        <h3
-          class="py-16 text-2xl lg:text-3xl text-slate-100 font-bitter font-bold"
-        >
-          Оставьте сообщение или&nbsp;заявку
-        </h3>
-        <form
-          on:submit|preventDefault={onSubmit}
-          class="grid grid-cols-1 gap-y-6"
-        >
-          <div>
-            <label for="username" class="sr-only">Имя</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              autocomplete="username"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-              placeholder="Имя"
-              bind:value={username}
-            />
-          </div>
-          <div>
-            <label for="email" class="sr-only">Электронная почта</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-              placeholder="Электронная почта"
-              bind:value={email}
-            />
-          </div>
-          <div>
-            <label for="phone" class="sr-only">Телефон</label>
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              autocomplete="tel"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-              placeholder="Телефон (необязательно)"
-              bind:value={phone}
-            />
-          </div>
-          <div>
-            <label for="message" class="sr-only">Сообщение</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
-              placeholder="Сообщение"
-              bind:value={message}
-            />
-          </div>
-          <div>
-            <button
-              aria-label="Отправить"
-              type="submit"
-              class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-800 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
-              >Отправить</button
-            >
-          </div>
-        </form>
-      </div>
+    {#if thanks}
+       <div class="text-slate-100 text-2xl text-center h-full p-6 grid place-content-center">
+         <p class="text-slate-100 text-2xl lg:text-4xl font-semibold font-bitter">Спасибо!</p>
+         <p class="mt-3 text-slate-100 text-lg lg:text-xl font-normal">Сообщения и заявки рассматриваются в рабочие часы</p>
+         <p class="mt-3 text-slate-300 text-lg lg:text-xl font-normal">ПН-ПТ 9:00-18:00</p>
+       </div>
+    {:else}
+    <div class="max-w-lg mx-auto lg:max-w-none">
+      <h3
+        class="py-16 text-2xl lg:text-3xl text-slate-100 font-bitter font-bold"
+      >
+        Оставьте сообщение или&nbsp;заявку
+      </h3>
+      <form
+        on:submit|preventDefault={onSubmit}
+        class="grid grid-cols-1 gap-y-6"
+      >
+        <div>
+          <label for="username" class="sr-only">Имя</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            autocomplete="username"
+            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+            placeholder="Имя"
+            bind:value={username}
+          />
+        </div>
+        <div>
+          <label for="email" class="sr-only">Электронная почта</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+            placeholder="Электронная почта"
+            bind:value={email}
+          />
+        </div>
+        <div>
+          <label for="phone" class="sr-only">Телефон</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            autocomplete="tel"
+            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+            placeholder="Телефон (необязательно)"
+            bind:value={phone}
+          />
+        </div>
+        <div>
+          <label for="message" class="sr-only">Сообщение</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="block w-full shadow-sm py-3 px-4 bg-slate-800 text-slate-100 placeholder-slate-300 focus:ring-slate-600 focus:border-slate-600 border-slate-700 rounded-md"
+            placeholder="Сообщение"
+            bind:value={message}
+          />
+        </div>
+        <div>
+          <button
+            aria-label="Отправить"
+            type="submit"
+            class="w-full lg:w-auto inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-800 hover:text-slate-900 bg-slate-100 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition duration-200"
+            >Отправить</button
+          >
+        </div>
+      </form>
+    </div>
+    {/if}
+      
     </div>
   </div>
 </div>
