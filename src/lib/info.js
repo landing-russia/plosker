@@ -10,4 +10,4 @@ export const name = "plosker-groupe"; // replace with your name
 /**
  * Used for SEO in /posts/[slug]
  */
-export const website = "https://www.plosker-groupe.ru/";
+export const website = "https://www.plosker-groupe.ru";
