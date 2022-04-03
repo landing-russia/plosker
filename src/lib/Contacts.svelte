@@ -9,7 +9,6 @@
 
   const onSubmit = () => {
     Email.send({
-      // SecureToken: "21b1e173-66d5-4a0b-b47b-132241eacf50",
       Host: "smtp.gmail.com",
       Username: "ploskergroupe@gmail.com",
       Password: "ploskergroupe4321#",
@@ -17,8 +16,7 @@
       From: email,
       Subject: "www.plosker-groupe.ru",
       Body: message + phone,
-    }).then((message) => console.log(message));
-    // console.log("dasdsdas!!!", { username, email, phone, message });
+    }).then((message) => alert(message));
   };
 </script>
 
