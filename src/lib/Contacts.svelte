@@ -303,7 +303,7 @@
                 bind:value={$form.username}
               />
               {#if $errors.username}
-                <small class="block my-1 text-xs italic text-slate-400">{$errors.username}</small>
+                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.username}</small>
               {/if}
             </div>
             <div>
@@ -319,7 +319,7 @@
                 bind:value={$form.email}
               />
               {#if $errors.email}
-                <small class="block my-1 text-xs italic text-slate-400">{$errors.email}</small>
+                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.email}</small>
               {/if}
             </div>
             <div>
@@ -335,7 +335,7 @@
                 bind:value={$form.phone}
               />
               {#if $errors.phone}
-                <small class="block my-1 text-xs italic text-slate-400">{$errors.phone}</small>
+                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.phone}</small>
               {/if}
             </div>
             <div>
@@ -350,7 +350,7 @@
                 bind:value={$form.message}
               />
               {#if $errors.message}
-                <small class="block my-1 text-xs italic text-slate-400">{$errors.message}</small>
+                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.message}</small>
               {/if}
             </div>
             <div>
