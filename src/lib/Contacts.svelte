@@ -272,7 +272,7 @@
           >
             Спасибо!
           </p>
-          <p class="mt-3 text-slate-100 text-lg lg:text-xl font-normal">
+          <p class="mt-3 text-slate-100 text-base sm:text-lg lg:text-xl font-normal">
             Сообщения и заявки рассматриваются в рабочие часы
           </p>
           <p class="mt-3 text-slate-300 text-lg lg:text-xl font-normal">
