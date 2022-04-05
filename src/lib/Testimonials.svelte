@@ -48,7 +48,7 @@
             </div> -->
             <div class="font-bitter italic">
               <div class="text-base font-medium text-slate-300">
-                Богаченко А.В.
+                Богаченко&nbsp;А.&nbsp;В.
               </div>
               <div class="text-sm font-medium text-slate-400">Салон «Шикардо»</div>
             </div>
@@ -96,7 +96,7 @@
             </div> -->
             <div class="font-bitter italic">
               <div class="text-base font-medium text-slate-300">
-                Кулаков В.Г.
+                Кулаков&nbsp;В.&nbsp;Г.
               </div>
               <div class="text-sm font-medium text-slate-400">Отель «Ультрамарин»</div>
             </div>
@@ -144,7 +144,7 @@
             </div> -->
             <div class="font-bitter italic">
               <div class="text-base font-medium text-slate-300">
-                Ламберски Т.Ю.
+                Ламберски&nbsp;Т.&nbsp;Ю.
               </div>
               <div class="text-sm font-medium text-slate-400">Юридический департамент имущественных и&nbsp;земельных отношений</div>
             </div>
