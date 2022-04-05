@@ -1,6 +1,7 @@
 <script>
   import { onDestroy } from "svelte";
   import { createEventDispatcher } from "svelte";
+  // import { page } from "$app/stores";
   import gsap from "gsap";
   import { onMount } from "svelte";
   import Pattern from "$lib/Pattern.svelte";
@@ -16,6 +17,10 @@
 
   export let isOpen;
   let resume = false;
+
+  // if ($page.url.searchParams.has("")) {
+  //   window.scrollTo(0, 0);
+  // }
 
   onMount(() => {
     const tl = gsap.timeline();
@@ -131,13 +136,14 @@
         </p>
         <div class="box invisible mt-10 lg:mt-12 2xl:mt-14">
           <a
-          href="#leto"
-          class="bg-rose-800 text-base lg:text-lg xl:text-xl text-white text-center hover:bg-rose-600 mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
-          >Внимание акция! <br>
-          <span class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bitter font-bold"
-            >Летний тариф для&nbsp;ИП на&nbsp;патенте</span
-          ></a
-        >
+            href="#leto"
+            class="bg-rose-800 text-base lg:text-lg xl:text-xl text-white text-center hover:bg-rose-600 mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
+            >Внимание акция! <br />
+            <span
+              class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bitter font-bold"
+              >Летний тариф для&nbsp;ИП на&nbsp;патенте</span
+            ></a
+          >
         </div>
       </div>
     </div>
