@@ -9,7 +9,7 @@
       Летний тариф<br />для&nbsp;ИП на&nbsp;патенте
     </h2>
     <p class="mt-6 text-xl lg:text-2xl text-rose-100 text-center">
-      Сезонным предпринимателям
+      Сезонным предпринимателям с&nbsp;1&nbsp;мая по&nbsp;30&nbsp;сентября
     </p>
 
     <!-- Tiers -->
@@ -27,7 +27,7 @@
             <span class="text-2xl xs:text-4xl font-extrabold tracking-tight"
               >2900&nbsp;₽</span
             >
-            <span class="ml-1 text-sm xs:text-xl font-semibold">/месяц</span>
+            <span class="ml-1 text-sm xs:text-xl font-semibold">/за&nbsp;сезон</span>
           </p>
 
           <!-- Feature list -->
@@ -160,7 +160,7 @@
             <span class="text-4xl font-extrabold tracking-tight"
               >10&nbsp;900&nbsp;₽</span
             >
-            <span class="ml-1 text-xl font-semibold">/месяц</span>
+            <span class="ml-1 text-xl font-semibold">/за&nbsp;сезон</span>
           </p>
 
           <!-- Feature list -->
