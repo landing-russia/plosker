@@ -37,7 +37,7 @@
         </div>
         <footer class="mt-8">
           <div class="flex items-start">
-            <div
+            <!-- <div
               class="flex-shrink-0 inline-flex rounded-full border-2 border-white"
             >
               <img
@@ -45,12 +45,12 @@
                 src="women-testimonials.jpg"
                 alt=""
               />
-            </div>
-            <div class="ml-4">
+            </div> -->
+            <div class="font-bitter italic">
               <div class="text-base font-medium text-slate-100">
-                Елена Ханга
+                Богаченко А.В.
               </div>
-              <div class="text-sm font-medium text-slate-300">директор</div>
+              <div class="text-sm font-medium text-slate-300">Салон «Шикардо»</div>
             </div>
           </div>
         </footer>
@@ -85,7 +85,7 @@
         </div>
         <footer class="mt-8">
           <div class="flex items-start">
-            <div
+            <!-- <div
               class="flex-shrink-0 inline-flex rounded-full border-2 border-white"
             >
               <img
@@ -93,12 +93,12 @@
                 src="women-testimonials.jpg"
                 alt=""
               />
-            </div>
-            <div class="ml-4">
+            </div> -->
+            <div class="font-bitter italic">
               <div class="text-base font-medium text-slate-100">
-                Елена Ханга
+                Кулаков В.Г.
               </div>
-              <div class="text-sm font-medium text-slate-300">директор</div>
+              <div class="text-sm font-medium text-slate-300">Отель «Ультрамарин»</div>
             </div>
           </div>
         </footer>
@@ -133,7 +133,7 @@
         </div>
         <footer class="mt-8">
           <div class="flex items-start">
-            <div
+            <!-- <div
               class="flex-shrink-0 inline-flex rounded-full border-2 border-white"
             >
               <img
@@ -141,12 +141,12 @@
                 src="women-testimonials.jpg"
                 alt=""
               />
-            </div>
-            <div class="ml-4">
+            </div> -->
+            <div class="font-bitter italic">
               <div class="text-base font-medium text-slate-100">
-                Елена Ханга
+                Ламберски Т.Ю.
               </div>
-              <div class="text-sm font-medium text-slate-300">директор</div>
+              <div class="text-sm font-medium text-slate-300">Юридический департамент имущественных и&nbsp;земельных отношений</div>
             </div>
           </div>
         </footer>
