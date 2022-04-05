@@ -22,15 +22,21 @@
   //   window.scrollTo(0, 0);
   // }
 
+  let url = "";
+
   onMount(() => {
-    const tl = gsap.timeline();
-    tl.from(".box", {
-      y: 20,
-      autoAlpha: 0,
-      duration: 0.8,
-      ease: "elastic.out(1, 0.3)",
-      delay: 0.25,
-    });
+    url = window.location.href;
+    if (url === "https://www.plosker-groupe.ru/" || url === "http://localhost:3000/") {
+      window.scrollTo(0, 0);
+      const tl = gsap.timeline();
+      tl.from(".box", {
+        y: 20,
+        autoAlpha: 0,
+        duration: 0.8,
+        ease: "elastic.out(1, 0.3)",
+        delay: 0.25,
+      });
+    }
   });
 
   const unsubscribe = isOpenStore.subscribe((value) => {
