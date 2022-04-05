@@ -36,6 +36,15 @@
         ease: "elastic.out(1, 0.3)",
         delay: 0.25,
       });
+    } else {
+      const tl = gsap.timeline();
+      tl.from(".box", {
+        y: 20,
+        autoAlpha: 0,
+        duration: 0.8,
+        ease: "elastic.out(1, 0.3)",
+        delay: 0.25,
+      });
     }
   });
 
