@@ -152,7 +152,7 @@
         <div class="box invisible mt-10 lg:mt-12 2xl:mt-14">
           <a
             href="#leto"
-            class="bg-rose-800 text-base lg:text-lg xl:text-xl text-white text-center hover:bg-rose-600 mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
+            class="bg-rose-700 text-base lg:text-lg xl:text-xl text-white text-center hover:bg-rose-900 mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
             >Внимание акция! <br />
             <span
               class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bitter font-bold"

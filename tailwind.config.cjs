@@ -14,7 +14,7 @@ const config = {
     },
     extend: {
       colors: {
-        "dark-pink": "#720829"
+        "dark-rose": "#62011F"
       },
       fontFamily: {
         bitter: "Bitter, serif",

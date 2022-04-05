@@ -17,7 +17,7 @@
       class="mt-12 lg:mt-16 space-y-12 lg:space-y-0 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-x-3 xl:gap-x-8 justify-items-center"
     >
       <div
-        class="relative max-w-xl lg:w-full p-8 bg-dark-pink border border-rose-700 rounded-2xl shadow-lg flex flex-col"
+        class="relative max-w-xl lg:w-full p-8 bg-dark-rose border border-rose-700 rounded-2xl shadow-lg flex flex-col"
       >
         <div class="flex-1">
           <h3 class="text-xl font-semibold text-white">
@@ -150,7 +150,7 @@
       </div>
 
       <div
-        class="relative max-w-xl lg:w-full p-8 bg-dark-pink border border-rose-700 rounded-2xl shadow-lg flex flex-col"
+        class="relative max-w-xl lg:w-full p-8 bg-dark-rose border border-rose-700 rounded-2xl shadow-lg flex flex-col"
       >
         <div class="flex-1">
           <h3 class="text-xl font-semibold text-white">
