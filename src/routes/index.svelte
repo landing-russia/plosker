@@ -1,18 +1,32 @@
 <script>
   import { onDestroy } from "svelte";
   import { createEventDispatcher } from "svelte";
+  import gsap from "gsap";
+  import { onMount } from "svelte";
   import Pattern from "$lib/Pattern.svelte";
   import Pattern2 from "$lib/Pattern-2.svelte";
   import Logo from "$lib/Logo.svelte";
   import SectionOne from "$lib/SectionOne.svelte";
   import SectionTwo from "$lib/SectionTwo.svelte";
   import Price from "$lib/Price.svelte";
+  import Leto from "$lib/Leto.svelte";
   import Contacts from "$lib/Contacts.svelte";
   import Testimonials from "$lib/Testimonials.svelte";
   import { isOpenStore } from "../store/store";
 
   export let isOpen;
   let resume = false;
+
+  onMount(() => {
+    const tl = gsap.timeline();
+    tl.from(".box", {
+      y: 20,
+      autoAlpha: 0,
+      duration: 0.8,
+      ease: "elastic.out(1, 0.3)",
+      delay: 0.25,
+    });
+  });
 
   const unsubscribe = isOpenStore.subscribe((value) => {
     isOpen = value;
@@ -110,11 +124,21 @@
           >
         </h1>
         <p
-          class="text-slate-300 text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal mt-6 max-w-4xl"
+          class="text-slate-300 text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal my-6 max-w-4xl"
         >
           Налоговая практика для юридических лиц и&nbsp;индивидуальных
           предпринимателей
         </p>
+        <div class="box invisible mt-10 lg:mt-12 2xl:mt-14">
+          <a
+          href="#leto"
+          class="bg-rose-800 text-base lg:text-lg xl:text-xl text-white text-center hover:bg-rose-600 mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
+          >Внимание акция! <br>
+          <span class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bitter font-bold"
+            >Летний тариф для&nbsp;ИП на&nbsp;патенте</span
+          ></a
+        >
+        </div>
       </div>
     </div>
   </div>
@@ -195,6 +219,8 @@
 <SectionTwo />
 
 <Price />
+
+<Leto />
 
 <Testimonials />
 

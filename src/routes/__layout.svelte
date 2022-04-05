@@ -11,10 +11,12 @@
   import { onDestroy } from "svelte";
   import Nav from "$lib/Nav.svelte";
   import Footer from "$lib/Footer.svelte";
+  import SaleModal from "$lib/SaleModal.svelte";
   import PageTransition from "$lib/PageTransition.svelte";
   import { isOpenStore } from "../store/store";
   export let key;
   let isOpen;
+  // let modalOpen = true;
 
   const unsubscribe = isOpenStore.subscribe((value) => {
     isOpen = value;
@@ -33,6 +35,7 @@
   >
     Акция!
   </div> -->
+  <!-- <SaleModal modalOpen /> -->
   <Nav {isOpen} />
   <main class="flex-grow w-full">
     <PageTransition refresh={key}>

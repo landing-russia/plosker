@@ -13,7 +13,9 @@ const config = {
       "3xl": "1900px",
     },
     extend: {
-      // colors,
+      colors: {
+        "dark-pink": "#720829"
+      },
       fontFamily: {
         bitter: "Bitter, serif",
         open: "Open Sans, sans-serif",
