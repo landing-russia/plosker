@@ -47,17 +47,17 @@
               />
             </div> -->
             <div class="font-bitter italic">
-              <div class="text-base font-medium text-slate-100">
+              <div class="text-base font-medium text-slate-300">
                 Богаченко А.В.
               </div>
-              <div class="text-sm font-medium text-slate-300">Салон «Шикардо»</div>
+              <div class="text-sm font-medium text-slate-400">Салон «Шикардо»</div>
             </div>
           </div>
         </footer>
       </blockquote>
     </div>
     <div
-      class="px-4 py-12 lg:py-0 border-t-2 border-slate-800 sm:px-6 lg:pr-0 lg:border-t-0 lg:border-l"
+      class="px-4 py-12 lg:py-0 border-t-2 border-slate-800 sm:px-6 lg:pr-10 lg:border-t-0 lg:border-l"
     >
       <div class="lg:flex-shrink-0">
         <img
@@ -95,17 +95,17 @@
               />
             </div> -->
             <div class="font-bitter italic">
-              <div class="text-base font-medium text-slate-100">
+              <div class="text-base font-medium text-slate-300">
                 Кулаков В.Г.
               </div>
-              <div class="text-sm font-medium text-slate-300">Отель «Ультрамарин»</div>
+              <div class="text-sm font-medium text-slate-400">Отель «Ультрамарин»</div>
             </div>
           </div>
         </footer>
       </blockquote>
     </div>
     <div
-      class="px-4 pt-12 lg:pt-0 border-t-2 border-slate-800 sm:px-6 lg:pr-0 lg:border-t-0 lg:border-l"
+      class="px-4 pt-12 lg:pt-0 border-t-2 border-slate-800 sm:px-6 lg:pr-10 lg:border-t-0 lg:border-l"
     >
       <div class="lg:flex-shrink-0">
         <img
@@ -143,10 +143,10 @@
               />
             </div> -->
             <div class="font-bitter italic">
-              <div class="text-base font-medium text-slate-100">
+              <div class="text-base font-medium text-slate-300">
                 Ламберски Т.Ю.
               </div>
-              <div class="text-sm font-medium text-slate-300">Юридический департамент имущественных и&nbsp;земельных отношений</div>
+              <div class="text-sm font-medium text-slate-400">Юридический департамент имущественных и&nbsp;земельных отношений</div>
             </div>
           </div>
         </footer>
