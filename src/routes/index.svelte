@@ -1,8 +1,6 @@
 <script>
   import { onDestroy } from "svelte";
   import { createEventDispatcher } from "svelte";
-  // import { page } from "$app/stores";
-  import gsap from "gsap";
   import { onMount } from "svelte";
   import Pattern from "$lib/Pattern.svelte";
   import Pattern2 from "$lib/Pattern-2.svelte";
@@ -18,33 +16,12 @@
   export let isOpen;
   let resume = false;
 
-  // if ($page.url.searchParams.has("")) {
-  //   window.scrollTo(0, 0);
-  // }
-
   let url = "";
 
   onMount(() => {
     url = window.location.href;
     if (url === "https://www.plosker-groupe.ru/" || url === "http://localhost:3000/") {
       window.scrollTo(0, 0);
-      const tl = gsap.timeline();
-      tl.from(".box", {
-        y: 20,
-        autoAlpha: 0,
-        duration: 0.8,
-        ease: "elastic.out(1, 0.3)",
-        delay: 0.25,
-      });
-    } else {
-      const tl = gsap.timeline();
-      tl.from(".box", {
-        y: 20,
-        autoAlpha: 0,
-        duration: 0.8,
-        ease: "elastic.out(1, 0.3)",
-        delay: 0.25,
-      });
     }
   });
 
@@ -149,7 +126,7 @@
           Налоговая практика для юридических лиц и&nbsp;индивидуальных
           предпринимателей
         </p>
-        <div class="box invisible mt-10 lg:mt-12 2xl:mt-14">
+        <div class="mt-10 lg:mt-12 2xl:mt-14">
           <a
             href="#leto"
             class="bg-rose-700 text-base lg:text-lg xl:text-xl text-white text-center hover:bg-rose-900 mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
