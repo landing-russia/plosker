@@ -1,4 +1,4 @@
-<a href="/" aria-label="Logo PLOSKER GROUPE"
+<a href="/" aria-label="Logo PLOSKER GROUPE" on:click={() => window.scrollTo(0, 0)}
   ><svg
     class="h-10 w-auto"
     width="311"

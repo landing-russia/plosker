@@ -1,6 +1,5 @@
 <script>
   import { onDestroy } from "svelte";
-  import { createEventDispatcher } from "svelte";
   import { onMount } from "svelte";
   import Pattern from "$lib/Pattern.svelte";
   import Pattern2 from "$lib/Pattern-2.svelte";
@@ -29,8 +28,6 @@
     isOpen = value;
   });
   onDestroy(unsubscribe);
-
-  const dispatch = createEventDispatcher();
 
   function changeStore() {
     isOpenStore.update(() => (isOpen = !isOpen));

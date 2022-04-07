@@ -26,37 +26,10 @@
     };
   });
 
-  if (typeof localStorage !== "undefined") {
-    if (
-      localStorage.theme === "dark"
-      // ||
-      // (!("theme" in localStorage) &&
-      //   window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      isDark = "dark";
-      document.documentElement.classList.add("dark");
-    } else {
-      isDark = "light";
-      document.documentElement.classList.remove("dark");
-    }
-  }
-
   function isNavEsc(e) {
     if (e.code === "Escape") {
       isOpen = false;
       isOpenStore.update(() => (isOpen = false));
-    }
-  }
-
-  function toggleDarkMode() {
-    if (isDark === "dark") {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-      isDark = "light";
-    } else if (isDark === "light") {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-      isDark = "dark";
     }
   }
 </script>
