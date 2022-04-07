@@ -72,7 +72,11 @@
     class="relative container-fluid flex justify-between items-start py-4 z-10"
   >
     <Logo2 />
-    <a href="#contact-info" aria-label="Контактная информация" class="hidden sm:block text-right">
+    <a
+      href="#contact-info"
+      aria-label="Контактная информация"
+      class="hidden sm:block text-right"
+    >
       <div
         class="flex items-center justify-end text-base 2xl:text-lg font-bold text-slate-100"
       >
@@ -139,7 +143,7 @@
     <div class="mt-1 flex items-start justify-between">
       <Logo2 />
       <button
-      aria-label="Закрыть"
+        aria-label="Закрыть"
         on:click={isOpenStore.update(() => (isOpen = false))}
         type="button"
         class="p-0.5 text-slate-400 rounded-full focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-slate-800"
@@ -158,42 +162,36 @@
         </svg>
       </button>
     </div>
-    <div class="mt-10 flex-grow text-2xl font-semibold font-bitter text-slate-300 space-y-5">
+    <div
+      class="mt-10 flex-grow text-2xl font-semibold font-bitter text-slate-300 space-y-5"
+    >
       <a
         href="#practice"
         aria-label="Практика"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
-      ><span
-          >Практика</span
-        >
+        ><span>Практика</span>
       </a>
       <a
         href="#price"
         aria-label="Тарифы"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
-      ><span
-          >Тарифы</span
-        >
+        ><span>Тарифы</span>
       </a>
       <a
         href="#testimonials"
         aria-label="Отзывы"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
-      ><span
-          >Отзывы</span
-        >
+        ><span>Отзывы</span>
       </a>
       <a
         href="#contact-info"
         aria-label="Контактная информация"
         on:click={isOpenStore.update(() => (isOpen = false))}
         class="flex items-center"
-      ><span
-          >Контакты</span
-        >
+        ><span>Контакты</span>
       </a>
     </div>
 
@@ -214,12 +212,14 @@
             stroke-linejoin="round"
             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
           />
-        </svg><span
+        </svg><a aria-label="Позвонить по телефону" href="tel:+79789461229"
           ><span class="font-semibold text-slate-300">+7&nbsp;978</span
-          >&nbsp;946-12-29</span
+          >&nbsp;946-12-29</a
         >
       </div>
-      <div class="mt-3 text-sm font-normal">г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2</div>
+      <div class="mt-3 text-sm font-normal">
+        г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
+      </div>
     </div>
   </div>
 </aside>
