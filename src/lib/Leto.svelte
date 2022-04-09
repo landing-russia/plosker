@@ -9,8 +9,8 @@
       Летний тариф<br />для&nbsp;ИП на&nbsp;патенте
     </h2>
     <p class="mt-6 text-xl lg:text-2xl text-white text-center">
-      Сезонным предпринимателям с&nbsp;1&nbsp;мая по&nbsp;30&nbsp;сентября
-    </p>
+      Сезонным предпринимателям <span class="font-bold">с&nbsp;1&nbsp;мая по&nbsp;30&nbsp;сентября
+    </span></p>
 
     <!-- Tiers -->
     <div
