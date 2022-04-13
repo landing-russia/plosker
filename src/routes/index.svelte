@@ -35,7 +35,7 @@
 </script>
 
 <svelte:head>
-  <title>PLOSKER GROUPE - Юридическая компания</title>
+  <title>ПЛОСКЕР ГРУПП - Юридическая компания</title>
   <meta
     name="description"
     content="Налоговая практика для юридических лиц и индивидуальных предпринимателей"
