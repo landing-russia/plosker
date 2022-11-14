@@ -25,7 +25,7 @@
           </h3>
           <p class="mt-4 flex items-baseline text-sky-900">
             <span class="text-2xl xs:text-4xl font-extrabold tracking-tight"
-              >2900&nbsp;₽</span
+              >3600&nbsp;₽</span
             >
             <span class="ml-1 text-sm xs:text-xl font-semibold">/за&nbsp;сезон</span>
           </p>
@@ -158,7 +158,7 @@
           </h3>
           <p class="mt-4 flex items-baseline text-sky-900">
             <span class="text-4xl font-extrabold tracking-tight"
-              >10&nbsp;900&nbsp;₽</span
+              >11&nbsp;200&nbsp;₽</span
             >
             <span class="ml-1 text-xl font-semibold">/за&nbsp;сезон</span>
           </p>
