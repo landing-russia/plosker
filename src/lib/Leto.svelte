@@ -70,7 +70,7 @@
                 />
               </svg>
               <span class="ml-3 text-sky-900 font-semibold"
-                >Подготовка платёжных поручений для оплаты страховых взносов</span
+                >Подготовка платежных поручений на&nbsp;перечисление Единого налогового платежа</span
               >
             </li>
 
@@ -225,8 +225,7 @@
                 />
               </svg>
               <span class="ml-3 text-sky-900 font-semibold"
-                >Подготовка платёжных поручений для оплаты страховых взносов,
-                НДФЛ, ФСС</span
+                >Подготовка платежных поручений на&nbsp;перечисление Единого налогового платежа</span
               >
             </li>
 
@@ -248,7 +247,7 @@
                 />
               </svg>
               <span class="ml-3 text-sky-900 font-semibold"
-                >Сдача отчётности в&nbsp;ПФР, ИФНС, ФСС</span
+                >Представление отчетности в&nbsp;ИФНС</span
               >
             </li>
             <li class="flex">
@@ -312,6 +311,27 @@
               </svg>
               <span class="ml-3 text-sky-900 font-semibold"
                 >Налоговое сопровождение на&nbsp;период действия патента</span
+              >
+            </li>
+            <li class="flex">
+              <!-- Heroicon name: outline/check -->
+              <svg
+                class="flex-shrink-0 w-6 h-6 text-sky-700"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span class="ml-3 text-sky-900 font-semibold"
+                >Подача уведомления об&nbsp;исчисленных суммах налогов, авансовых платежей, страховых взносов</span
               >
             </li>
           </ul>
