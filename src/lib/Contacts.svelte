@@ -53,7 +53,7 @@
             <dd class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -84,7 +84,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/phone -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -115,7 +115,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/phone -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -146,7 +146,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/phone -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -177,7 +177,7 @@
             <dd class="flex">
               <!-- Heroicon name: outline/mail -->
               <svg
-                class="flex-shrink-0 h-6 w-6 pt-1 text-slate-400"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

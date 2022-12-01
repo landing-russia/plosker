@@ -113,7 +113,7 @@
         <h1
           class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-7.5xl font-bold text-white"
         >
-          Специализация&nbsp;— <span class="text-slate-300"
+          Специализация&nbsp;— <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500"
             >налоговое&nbsp;право</span
           >
         </h1>
@@ -126,7 +126,7 @@
         <div class="mt-10 lg:mt-12 2xl:mt-14">
           <a
             href="#leto"
-            class="bg-sky-700 text-base lg:text-lg xl:text-xl text-white text-center hover:bg-sky-900 mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
+            class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl text-base lg:text-lg xl:text-xl text-white text-center mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
             >Внимание акция! <br />
             <span
               class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bitter font-bold"
