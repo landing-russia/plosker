@@ -1,7 +1,7 @@
 <div id="price" class="py-12 lg:py-20 bg-slate-800">
   <div class="container-fluid max-w-screen-2xl">
     <h2
-      class="text-4xl font-bold text-blue-200 sm:text-5xl sm:leading-none lg:text-6xl text-center"
+      class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 sm:text-5xl sm:leading-none lg:text-6xl text-center"
     >
       Тарифы
     </h2>

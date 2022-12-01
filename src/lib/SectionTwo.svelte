@@ -5,7 +5,7 @@
     >
       <div class="max-w-lg">
         <h3
-          class="mb-6 text-2xl font-bold text-blue-200 sm:text-3xl sm:leading-none lg:text-4xl text-center"
+          class="mb-6 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 sm:text-3xl sm:leading-none lg:text-4xl text-center"
         >
           Бухгалтерские услуги
         </h3>
@@ -50,7 +50,7 @@
       </div>
       <div class="max-w-lg">
         <h3
-          class="mb-6 text-2xl font-bold text-blue-200 sm:text-3xl sm:leading-none lg:text-4xl text-center"
+          class="mb-6 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 sm:text-3xl sm:leading-none lg:text-4xl text-center"
         >
           Корпоративное право
         </h3>
