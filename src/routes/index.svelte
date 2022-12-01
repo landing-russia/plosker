@@ -126,7 +126,7 @@
         <div class="mt-10 lg:mt-12 2xl:mt-14">
           <a
             href="#leto"
-            class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl text-base lg:text-lg xl:text-xl text-white text-center mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
+            class="bg-gradient-to-r from-cyan-600 to-blue-600 hover:bg-gradient-to-bl text-base lg:text-lg xl:text-xl text-white text-center mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
             >Внимание акция! <br />
             <span
               class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bitter font-bold"

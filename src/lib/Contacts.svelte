@@ -37,7 +37,7 @@
 <div id="contact-info" class="pt-12 lg:pt-20 bg-slate-800">
   <div class="container-fluid max-w-screen-2xl">
     <h2
-      class="text-4xl font-bold text-white sm:text-5xl sm:leading-none lg:text-6xl text-center"
+      class="text-4xl font-bold text-blue-200 sm:text-5xl sm:leading-none lg:text-6xl text-center"
     >
       Контактная информация
     </h2>
