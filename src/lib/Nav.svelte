@@ -55,7 +55,7 @@
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4 mr-2 text-slate-400"
+          class="h-4 w-4 mr-2 text-cyan-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -174,7 +174,7 @@
       <div class="flex items-center text-slate-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 mr-2 text-slate-400"
+          class="h-5 w-5 mr-2 text-cyan-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

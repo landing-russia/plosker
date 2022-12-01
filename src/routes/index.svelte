@@ -63,7 +63,7 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 mr-1 text-slate-300"
+            class="h-4 w-4 mr-1 text-cyan-300"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
