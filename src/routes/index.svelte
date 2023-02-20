@@ -11,6 +11,7 @@
   import Contacts from "$lib/Contacts.svelte";
   import Testimonials from "$lib/Testimonials.svelte";
   import { isOpenStore } from "../store/store";
+  import Events from "$lib/Events.svelte"
 
   export let isOpen;
   let resume = false;
@@ -218,5 +219,7 @@
 <Leto />
 
 <Testimonials />
+
+<Events />
 
 <Contacts />
