@@ -1,10 +1,10 @@
 <script>
-  import Logo3 from "./Logo3.svelte";
-  import { Email } from "$lib/smtp";
-  import { createForm } from "svelte-forms-lib";
-  import * as yup from "yup";
+  import Logo3 from "./Logo3.svelte"
+  import { Email } from "$lib/smtp"
+  import { createForm } from "svelte-forms-lib"
+  import * as yup from "yup"
 
-  let thanks = false;
+  let thanks = false
 
   const { form, errors, handleSubmit, handleChange } = createForm({
     initialValues: {
@@ -14,9 +14,23 @@
       message: "",
     },
     validationSchema: yup.object().shape({
-      username: yup.string().min(3, "Не меньше 3 символов").max(30, "Не больше 30 символов").required("Имя обязательно").trim(),
-      email: yup.string().email("Введите правильный email").required("Электронная почта обязательна").trim(),
-      message: yup.string().min(3, "Не меньше 5 символов").max(250, "Слишко большой текст. Сократите.").required("Сообщение обязательно").trim(),
+      username: yup
+        .string()
+        .min(3, "Не меньше 3 символов")
+        .max(30, "Не больше 30 символов")
+        .required("Имя обязательно")
+        .trim(),
+      email: yup
+        .string()
+        .email("Введите правильный email")
+        .required("Электронная почта обязательна")
+        .trim(),
+      message: yup
+        .string()
+        .min(3, "Не меньше 5 символов")
+        .max(250, "Слишко большой текст. Сократите.")
+        .required("Сообщение обязательно")
+        .trim(),
     }),
     onSubmit: ({ username, email, phone, message }) => {
       Email.send({
@@ -29,9 +43,9 @@
         Body: message + " " + username + " " + phone,
       })
         .then((message) => console.log(message))
-        .then(() => (thanks = true));
+        .then(() => (thanks = true))
     },
-  });
+  })
 </script>
 
 <div id="contact-info" class="pt-12 lg:pt-20 bg-slate-800">
@@ -198,6 +212,38 @@
               >
             </dd>
           </div>
+          <div>
+            <dt class="sr-only">Telegram</dt>
+            <dd class="flex">
+              <svg
+                class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                ><path
+                  fill="currentColor"
+                  d="M21.945 2.765a1.552 1.552 0 0 0-1.572-.244L2.456 9.754a1.543 1.543 0 0 0 .078 2.884L6.4 13.98l2.095 6.926c.004.014.017.023.023.036a.486.486 0 0 0 .093.15a.49.49 0 0 0 .226.143c.01.004.017.013.027.015h.006l.003.001a.448.448 0 0 0 .233-.012c.008-.002.016-.002.025-.005a.495.495 0 0 0 .191-.122c.006-.007.016-.008.022-.014l3.013-3.326l4.397 3.405c.267.209.596.322.935.322c.734 0 1.367-.514 1.518-1.231L22.469 4.25a1.533 1.533 0 0 0-.524-1.486zM9.588 15.295l-.707 3.437l-1.475-4.878l7.315-3.81l-4.997 4.998a.498.498 0 0 0-.136.253zm8.639 4.772a.54.54 0 0 1-.347.399a.525.525 0 0 1-.514-.078l-4.763-3.689a.5.5 0 0 0-.676.06L9.83 19.07l.706-3.427l7.189-7.19a.5.5 0 0 0-.584-.797L6.778 13.054l-3.917-1.362A.526.526 0 0 1 2.5 11.2a.532.532 0 0 1 .334-.518l17.914-7.233a.536.536 0 0 1 .558.086a.523.523 0 0 1 .182.518l-3.261 16.015z"
+                /></svg
+              >
+              <a
+                aria-label="Telegram"
+                href="https://t.me/ploskergroupe_nalog"
+                class="ml-3 text-lg text-slate-100">t.me/ploskergroupe_nalog</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt class="sr-only">Vkontakte</dt>
+            <dd class="flex">
+              <svg class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M3 248c0-38 26-53 58-55l149 1c9 0 17 6 20 15c34 110 76 178 126 255c3 6 8 9 13 9c4 0 8-2 11-7l3-11l1-173c0-25-12-29-40-33c-11-2-18-12-18-22c0-2 0-4 1-6c14-43 58-65 120-65l56-1c46 0 88 20 88 79v227c4 3 8 5 13 5c8 0 18-5 26-18c52-73 111-160 119-206c0-2 1-3 2-5c11-22 39-37 51-41c2-1 5-2 9-2h155l10 1c15 0 26 10 31 19c9 14 7 29 8 35v7c-15 91-119 193-163 259c-6 8-9 15-9 22c0 6 3 12 8 18l146 184c8 11 12 24 12 35c0 33-31 52-61 55l-17 1H779c-3 0-5 1-8 1c-17 0-31-9-41-19c-32-39-63-79-94-118c-6-8-8-9-14-13c-7 29-13 59-20 89l-3 17c-5 18-18 37-42 42l-14 1h-98C272 830 117 584 8 277c-3-8-5-19-5-29zm601 259c-26 0-55-15-55-43V234c0-27-12-37-45-37l-57 2c-32 0-50 5-65 15c23 11 44 26 44 68v176c-3 35-32 58-60 58c-19 0-36-11-46-29c-45-68-83-132-116-224l-9-26l-133-1c-18 0-16 1-16 10c0 6 1 14 2 19l21 56c109 282 246 467 376 467h100c14 0 13-17 16-27l19-88c4-9 7-17 14-24c8-8 17-11 26-11c19 0 37 15 49 29l85 108c7 11 13 13 17 13h165c16 0 30-5 30-15c0-3-1-7-3-10L818 582c-12-15-17-30-17-45c0-16 6-32 16-46c42-63 132-153 153-227l3-13c-1-5-1-9-2-14H814c-10 4-18 10-24 18l-6 19c-23 64-86 152-131 213c-15 14-32 20-49 20z"/></svg>
+              <a
+                aria-label="Vkontakte"
+                href="https://vk.com/ploskergroupe"
+                class="ml-3 text-lg text-slate-100">vk.com/ploskergroupe</a
+              >
+            </dd>
+          </div>
         </dl>
         <div class="mt-10 flex">
           <a
@@ -272,7 +318,9 @@
           >
             Спасибо!
           </p>
-          <p class="mt-3 text-slate-100 text-base sm:text-lg lg:text-xl font-normal">
+          <p
+            class="mt-3 text-slate-100 text-base sm:text-lg lg:text-xl font-normal"
+          >
             Сообщения и заявки рассматриваются в рабочие часы
           </p>
           <p class="mt-3 text-slate-300 text-lg lg:text-xl font-normal">
@@ -303,7 +351,10 @@
                 bind:value={$form.username}
               />
               {#if $errors.username}
-                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.username}</small>
+                <small
+                  class="block my-1 text-xs lg:text-base italic text-slate-400"
+                  >{$errors.username}</small
+                >
               {/if}
             </div>
             <div>
@@ -319,7 +370,10 @@
                 bind:value={$form.email}
               />
               {#if $errors.email}
-                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.email}</small>
+                <small
+                  class="block my-1 text-xs lg:text-base italic text-slate-400"
+                  >{$errors.email}</small
+                >
               {/if}
             </div>
             <div>
@@ -335,7 +389,10 @@
                 bind:value={$form.phone}
               />
               {#if $errors.phone}
-                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.phone}</small>
+                <small
+                  class="block my-1 text-xs lg:text-base italic text-slate-400"
+                  >{$errors.phone}</small
+                >
               {/if}
             </div>
             <div>
@@ -350,7 +407,10 @@
                 bind:value={$form.message}
               />
               {#if $errors.message}
-                <small class="block my-1 text-xs lg:text-base italic text-slate-400">{$errors.message}</small>
+                <small
+                  class="block my-1 text-xs lg:text-base italic text-slate-400"
+                  >{$errors.message}</small
+                >
               {/if}
             </div>
             <div>
