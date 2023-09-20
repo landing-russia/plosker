@@ -21,3 +21,6 @@
     @apply font-bitter;
   }
 }
+
+@layer utilities {
+}
