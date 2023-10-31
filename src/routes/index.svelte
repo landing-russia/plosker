@@ -17,12 +17,6 @@
 
   let resume = false
 
-  const arr = ["tatyana", "tatyana-2"]
-
-  let rand = Math.floor(Math.random() * arr.length)
-
-  $: imageSrc = arr[rand]
-
   let url = ""
 
   onMount(() => {
@@ -150,7 +144,7 @@
     </div>
   </div>
   <div
-    class="relative grid min-h-144 lg:min-h-full pb-4 {imageSrc} bg-cover bg-center overflow-hidden"
+    class="relative grid min-h-144 lg:min-h-full pb-4 bg-[url(tatyana-2.webp)] bg-cover bg-center overflow-hidden"
   >
     {#if resume}
       <div
