@@ -1,37 +1,47 @@
 <script>
-  import { onDestroy } from "svelte";
-  import { onMount } from "svelte";
-  import Pattern from "$lib/Pattern.svelte";
-  import Pattern2 from "$lib/Pattern-2.svelte";
-  import Logo from "$lib/Logo.svelte";
-  import SectionOne from "$lib/SectionOne.svelte";
-  import SectionTwo from "$lib/SectionTwo.svelte";
-  import Price from "$lib/Price.svelte";
+  import { onDestroy } from "svelte"
+  import { onMount } from "svelte"
+  import Pattern from "$lib/Pattern.svelte"
+  import Pattern2 from "$lib/Pattern-2.svelte"
+  import Logo from "$lib/Logo.svelte"
+  import SectionOne from "$lib/SectionOne.svelte"
+  import SectionTwo from "$lib/SectionTwo.svelte"
+  import Price from "$lib/Price.svelte"
   // import Leto from "$lib/Leto.svelte";
-  import Contacts from "$lib/Contacts.svelte";
-  import Testimonials from "$lib/Testimonials.svelte";
-  import { isOpenStore } from "../store/store";
+  import Contacts from "$lib/Contacts.svelte"
+  import Testimonials from "$lib/Testimonials.svelte"
+  import { isOpenStore } from "../store/store"
   import Events from "$lib/Events.svelte"
 
-  export let isOpen;
-  let resume = false;
+  export let isOpen
 
-  let url = "";
+  let resume = false
+
+  const arr = ["tatyana", "tatyana-2"]
+
+  let rand = Math.floor(Math.random() * arr.length)
+
+  $: imageSrc = arr[rand]
+
+  let url = ""
 
   onMount(() => {
-    url = window.location.href;
-    if (url === "https://www.plosker-groupe.ru/" || url === "http://localhost:3000/") {
-      window.scrollTo(0, 0);
+    url = window.location.href
+    if (
+      url === "https://www.plosker-groupe.ru/" ||
+      url === "http://localhost:3000/"
+    ) {
+      window.scrollTo(0, 0)
     }
-  });
+  })
 
   const unsubscribe = isOpenStore.subscribe((value) => {
-    isOpen = value;
-  });
-  onDestroy(unsubscribe);
+    isOpen = value
+  })
+  onDestroy(unsubscribe)
 
   function changeStore() {
-    isOpenStore.update(() => (isOpen = !isOpen));
+    isOpenStore.update(() => (isOpen = !isOpen))
   }
 </script>
 
@@ -114,7 +124,8 @@
         <h1
           class="text-3xl xs:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-7.5xl font-bold text-white"
         >
-          Специализация&nbsp;— <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500"
+          Специализация&nbsp;— <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500"
             >налоговое&nbsp;право</span
           >
         </h1>
@@ -139,7 +150,7 @@
     </div>
   </div>
   <div
-    class="relative grid min-h-144 lg:min-h-full pb-4 bg-[url('/tatyana-2.webp')] bg-cover bg-center overflow-hidden"
+    class="relative grid min-h-144 lg:min-h-full pb-4 {imageSrc} bg-cover bg-center overflow-hidden"
   >
     {#if resume}
       <div

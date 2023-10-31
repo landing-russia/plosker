@@ -20,6 +20,14 @@
   h6 {
     @apply font-bitter;
   }
+
+  .tatyana {
+    @apply bg-[url(tatyana.webp)]
+  }
+
+  .tatyana-2 {
+    @apply bg-[url(tatyana-2.webp)]
+  }
 }
 
 @layer utilities {
