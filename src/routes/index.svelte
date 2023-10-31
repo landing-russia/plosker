@@ -125,7 +125,7 @@
           предпринимателей
         </p>
         <div class="mt-10 lg:mt-12 2xl:mt-14">
-          <a
+          <!-- <a
             href="#leto"
             class="bg-gradient-to-r from-cyan-600 to-blue-600 hover:bg-gradient-to-bl text-base lg:text-lg xl:text-xl text-white text-center mt-8 block py-5 px-6 border border-transparent rounded-md font-medium transition duration-200"
             >Внимание акция! <br />
@@ -133,13 +133,13 @@
               class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bitter font-bold"
               >Летний тариф для&nbsp;ИП на&nbsp;патенте</span
             ></a
-          >
+          > -->
         </div>
       </div>
     </div>
   </div>
   <div
-    class="relative grid min-h-144 lg:min-h-full pb-4 bg-[url('/women-new.webp')] bg-cover bg-center overflow-hidden"
+    class="relative grid min-h-144 lg:min-h-full pb-4 bg-[url('/tatyana.webp')] bg-cover bg-center overflow-hidden"
   >
     {#if resume}
       <div
