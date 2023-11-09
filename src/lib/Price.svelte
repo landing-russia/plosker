@@ -22,7 +22,7 @@
           <h3 class="text-xl font-semibold text-white">Старт</h3>
           <p class="mt-4 flex items-baseline text-slate-100">
             <span class="text-2xl xs:text-4xl font-extrabold tracking-tight"
-              >от&nbsp;2600&nbsp;₽</span
+              >от&nbsp;4500&nbsp;₽</span
             >
             <span class="ml-1 text-sm xs:text-xl font-semibold">/месяц</span>
           </p>
@@ -140,7 +140,7 @@
           </p>
           <p class="mt-4 flex items-baseline text-slate-100">
             <span class="text-4xl font-extrabold tracking-tight"
-              >от&nbsp;6800&nbsp;₽</span
+              >от&nbsp;9000&nbsp;₽</span
             >
             <span class="ml-1 text-xl font-semibold">/месяц</span>
           </p>
@@ -311,7 +311,7 @@
           <h3 class="text-xl font-semibold text-white">Бизнес</h3>
           <p class="mt-4 flex items-baseline text-slate-100">
             <span class="text-4xl font-extrabold tracking-tight"
-              >от&nbsp;9500&nbsp;₽</span
+              >от&nbsp;12&nbsp;500&nbsp;₽</span
             >
             <span class="ml-1 text-xl font-semibold">/месяц</span>
           </p>
