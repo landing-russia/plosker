@@ -87,7 +87,7 @@
         <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-white">
           г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
         </div>
-        <div class="text-sm 2xl:text-lg leading-4 2xl:leading-5 text-white">
+        <div class="mt-1 text-sm 2xl:text-lg leading-4 2xl:leading-5 text-white">
           г.&nbsp;Геническ, ул.&nbsp;Центральная,&nbsp;87-А
         </div>
       </a>
