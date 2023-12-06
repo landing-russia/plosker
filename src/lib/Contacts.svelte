@@ -92,6 +92,35 @@
                 г.&nbsp;Евпатория, пр-т&nbsp;Победы,&nbsp;37, оф.&nbsp;2
               </a>
             </dd>
+            <dt class="sr-only">Адрес</dt>
+            <dd class="flex mt-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 h-6 w-6 pt-1 text-cyan-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <a
+                aria-label="На карте"
+                href="https://yandex.ru/maps/29128/genichesk/house/tsentralna_vulytsia_87a/Z00YcQ9lQEQFQFpsfX13eXRjZg==/?ll=34.785912%2C46.168802&utm_source=main_stripe_big&z=16"
+                class="ml-3 text-lg text-slate-100"
+              >
+              г.&nbsp;Геническ, ул.&nbsp;Центральная,&nbsp;87-А
+              </a>
+            </dd>
           </div>
           <div>
             <dt class="sr-only">Телефон</dt>
